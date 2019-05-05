@@ -1,0 +1,3109 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_a1afb7884ff0483a9b400b58f7a41b4f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a1afb7884ff0483a9b400b58f7a41b4f" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_a1afb7884ff0483a9b400b58f7a41b4f = L.map(
+                                  'map_a1afb7884ff0483a9b400b58f7a41b4f',
+                                  {center: [37.713160869565215,-119.79049710144928],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_153baf7d37fd4d80a1751b2af08bfe70 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_a1afb7884ff0483a9b400b58f7a41b4f);
+        
+    
+            var marker_cluster_d541b744f264484c86a77f7384a7c686 = L.markerClusterGroup({
+                
+            });
+            map_a1afb7884ff0483a9b400b58f7a41b4f.addLayer(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+
+            var marker_d5172ed5ebf34a31b0b308c7b8be00b9 = L.marker(
+                [45.5372,-122.65],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_76c19e68ab7d48f6860a65854db008e5 = L.popup({maxWidth: '300'});
+
+            
+                var html_0db95aa2a9e44d93887fe8130d8de9da = $('<div id="html_0db95aa2a9e44d93887fe8130d8de9da" style="width: 100.0%; height: 100.0%;">City: Portland<br>Population: 2052796<br>BreweryCount: 50<br>People per Brewery: 41055</div>')[0];
+                popup_76c19e68ab7d48f6860a65854db008e5.setContent(html_0db95aa2a9e44d93887fe8130d8de9da);
+            
+
+            marker_d5172ed5ebf34a31b0b308c7b8be00b9.bindPopup(popup_76c19e68ab7d48f6860a65854db008e5);
+
+            
+        
+    
+
+            var marker_2bdb015c6b2042b3b8fb69ab770dd5a0 = L.marker(
+                [47.6211,-122.3244],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2c95487a7c3744c1934de30208514b4b = L.popup({maxWidth: '300'});
+
+            
+                var html_a429d198eb404b76b2dace9f44963551 = $('<div id="html_a429d198eb404b76b2dace9f44963551" style="width: 100.0%; height: 100.0%;">City: Seattle<br>Population: 3643765<br>BreweryCount: 48<br>People per Brewery: 75911</div>')[0];
+                popup_2c95487a7c3744c1934de30208514b4b.setContent(html_a429d198eb404b76b2dace9f44963551);
+            
+
+            marker_2bdb015c6b2042b3b8fb69ab770dd5a0.bindPopup(popup_2c95487a7c3744c1934de30208514b4b);
+
+            
+        
+    
+
+            var marker_2ed198353d484874af92fe9a5e2853ad = L.marker(
+                [37.7562,-122.443],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_8550da8d340541ba9f410cf9d99cd777 = L.popup({maxWidth: '300'});
+
+            
+                var html_a0db3e0740904cc884040f596b45b728 = $('<div id="html_a0db3e0740904cc884040f596b45b728" style="width: 100.0%; height: 100.0%;">City: San Francisco<br>Population: 3603761<br>BreweryCount: 42<br>People per Brewery: 85803</div>')[0];
+                popup_8550da8d340541ba9f410cf9d99cd777.setContent(html_a0db3e0740904cc884040f596b45b728);
+            
+
+            marker_2ed198353d484874af92fe9a5e2853ad.bindPopup(popup_8550da8d340541ba9f410cf9d99cd777);
+
+            
+        
+    
+
+            var marker_102890aa517047ceaa56c29c1d7c5493 = L.marker(
+                [44.0562,-121.3087],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_08c2fde598914601be8b1b51c96d9e1f = L.popup({maxWidth: '300'});
+
+            
+                var html_71d46e77ed394faf8b9a6af850e89dc2 = $('<div id="html_71d46e77ed394faf8b9a6af850e89dc2" style="width: 100.0%; height: 100.0%;">City: Bend<br>Population: 103349<br>BreweryCount: 37<br>People per Brewery: 2793</div>')[0];
+                popup_08c2fde598914601be8b1b51c96d9e1f.setContent(html_71d46e77ed394faf8b9a6af850e89dc2);
+            
+
+            marker_102890aa517047ceaa56c29c1d7c5493.bindPopup(popup_08c2fde598914601be8b1b51c96d9e1f);
+
+            
+        
+    
+
+            var marker_a20abf8b9bd44d89920cc9270ad21e76 = L.marker(
+                [33.8346,-118.3417],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_1512a54cf7fd4903bbe366b7fb4beee5 = L.popup({maxWidth: '300'});
+
+            
+                var html_00e3bebcfe34441585df57f038b538bc = $('<div id="html_00e3bebcfe34441585df57f038b538bc" style="width: 100.0%; height: 100.0%;">City: Torrance<br>Population: 146758<br>BreweryCount: 33<br>People per Brewery: 4447</div>')[0];
+                popup_1512a54cf7fd4903bbe366b7fb4beee5.setContent(html_00e3bebcfe34441585df57f038b538bc);
+            
+
+            marker_a20abf8b9bd44d89920cc9270ad21e76.bindPopup(popup_1512a54cf7fd4903bbe366b7fb4beee5);
+
+            
+        
+    
+
+            var marker_eb615e0bb0d044cb8c9845e32f4f30f0 = L.marker(
+                [33.839,-117.8572],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_174c7b6f03aa48e8900c24430076537a = L.popup({maxWidth: '300'});
+
+            
+                var html_82e6b69771734324b78772b84e81c1ef = $('<div id="html_82e6b69771734324b78772b84e81c1ef" style="width: 100.0%; height: 100.0%;">City: Anaheim<br>Population: 352497<br>BreweryCount: 29<br>People per Brewery: 12155</div>')[0];
+                popup_174c7b6f03aa48e8900c24430076537a.setContent(html_82e6b69771734324b78772b84e81c1ef);
+            
+
+            marker_eb615e0bb0d044cb8c9845e32f4f30f0.bindPopup(popup_174c7b6f03aa48e8900c24430076537a);
+
+            
+        
+    
+
+            var marker_3912a04f029945bfabb7ab8629d9ec94 = L.marker(
+                [44.0563,-123.1173],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_9ee1889a5f994c6a93b9e8ba863f63c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_95ba89b346ca4cc19746d3064279b2e5 = $('<div id="html_95ba89b346ca4cc19746d3064279b2e5" style="width: 100.0%; height: 100.0%;">City: Eugene<br>Population: 267568<br>BreweryCount: 28<br>People per Brewery: 9556</div>')[0];
+                popup_9ee1889a5f994c6a93b9e8ba863f63c1.setContent(html_95ba89b346ca4cc19746d3064279b2e5);
+            
+
+            marker_3912a04f029945bfabb7ab8629d9ec94.bindPopup(popup_9ee1889a5f994c6a93b9e8ba863f63c1);
+
+            
+        
+    
+
+            var marker_6bd115bd34f44947a0492b87b66a60b4 = L.marker(
+                [33.8059,-118.161],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f4c11bf4019f463fb89124679a1987b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_41540a8fe76945d0b876bc0041567a50 = $('<div id="html_41540a8fe76945d0b876bc0041567a50" style="width: 100.0%; height: 100.0%;">City: Long Beach<br>Population: 469450<br>BreweryCount: 28<br>People per Brewery: 16766</div>')[0];
+                popup_f4c11bf4019f463fb89124679a1987b5.setContent(html_41540a8fe76945d0b876bc0041567a50);
+            
+
+            marker_6bd115bd34f44947a0492b87b66a60b4.bindPopup(popup_f4c11bf4019f463fb89124679a1987b5);
+
+            
+        
+    
+
+            var marker_2b66532d46eb4b8bb349a1e0fe208df0 = L.marker(
+                [33.8841,-117.9279],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_6ecb9f7ce1d847fe98a27351bd47c27b = L.popup({maxWidth: '300'});
+
+            
+                var html_5f6d0fd5cb1b435cbacf0b497261aa65 = $('<div id="html_5f6d0fd5cb1b435cbacf0b497261aa65" style="width: 100.0%; height: 100.0%;">City: Fullerton<br>Population: 140392<br>BreweryCount: 26<br>People per Brewery: 5399</div>')[0];
+                popup_6ecb9f7ce1d847fe98a27351bd47c27b.setContent(html_5f6d0fd5cb1b435cbacf0b497261aa65);
+            
+
+            marker_2b66532d46eb4b8bb349a1e0fe208df0.bindPopup(popup_6ecb9f7ce1d847fe98a27351bd47c27b);
+
+            
+        
+    
+
+            var marker_45475fb701dc41988704b5f18eb1799a = L.marker(
+                [38.5667,-121.4683],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_67cc0e4face24263b64a4a6d1523f6ae = L.popup({maxWidth: '300'});
+
+            
+                var html_4e605db8141549ffaec156cf4579a1aa = $('<div id="html_4e605db8141549ffaec156cf4579a1aa" style="width: 100.0%; height: 100.0%;">City: Sacramento<br>Population: 1854698<br>BreweryCount: 25<br>People per Brewery: 74187</div>')[0];
+                popup_67cc0e4face24263b64a4a6d1523f6ae.setContent(html_4e605db8141549ffaec156cf4579a1aa);
+            
+
+            marker_45475fb701dc41988704b5f18eb1799a.bindPopup(popup_67cc0e4face24263b64a4a6d1523f6ae);
+
+            
+        
+    
+
+            var marker_f8f6f862e3244a6982f6c4921a800086 = L.marker(
+                [47.2431,-122.4531],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_8271a68f692c4bafb0c04e23ad49fbbd = L.popup({maxWidth: '300'});
+
+            
+                var html_cee906481655491d813a44ebfcb16e74 = $('<div id="html_cee906481655491d813a44ebfcb16e74" style="width: 100.0%; height: 100.0%;">City: Tacoma<br>Population: 213418<br>BreweryCount: 25<br>People per Brewery: 8536</div>')[0];
+                popup_8271a68f692c4bafb0c04e23ad49fbbd.setContent(html_cee906481655491d813a44ebfcb16e74);
+            
+
+            marker_f8f6f862e3244a6982f6c4921a800086.bindPopup(popup_8271a68f692c4bafb0c04e23ad49fbbd);
+
+            
+        
+    
+
+            var marker_65b8e9e190344d95904964913e5371f9 = L.marker(
+                [47.6671,-117.433],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_6295ddcc823a4dfc8da50cdc43b17233 = L.popup({maxWidth: '300'});
+
+            
+                var html_c33f5adc37ab43158d2656c9857bf8f3 = $('<div id="html_c33f5adc37ab43158d2656c9857bf8f3" style="width: 100.0%; height: 100.0%;">City: Spokane<br>Population: 403043<br>BreweryCount: 24<br>People per Brewery: 16793</div>')[0];
+                popup_6295ddcc823a4dfc8da50cdc43b17233.setContent(html_c33f5adc37ab43158d2656c9857bf8f3);
+            
+
+            marker_65b8e9e190344d95904964913e5371f9.bindPopup(popup_6295ddcc823a4dfc8da50cdc43b17233);
+
+            
+        
+    
+
+            var marker_0bf4ad5b9cae4f4b82cb7152cd566ce1 = L.marker(
+                [33.1895,-117.2387],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_1ed14a7d59884d11b1f5f41bb27d2267 = L.popup({maxWidth: '300'});
+
+            
+                var html_bef96f55570849ac9d21554c79eddb08 = $('<div id="html_bef96f55570849ac9d21554c79eddb08" style="width: 100.0%; height: 100.0%;">City: Vista<br>Population: 101568<br>BreweryCount: 23<br>People per Brewery: 4416</div>')[0];
+                popup_1ed14a7d59884d11b1f5f41bb27d2267.setContent(html_bef96f55570849ac9d21554c79eddb08);
+            
+
+            marker_0bf4ad5b9cae4f4b82cb7152cd566ce1.bindPopup(popup_1ed14a7d59884d11b1f5f41bb27d2267);
+
+            
+        
+    
+
+            var marker_cf2da9a33cac4b0fb267dccb69ee1a28 = L.marker(
+                [37.8723,-122.276],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_e2fcdc0a90ef4b21b1f417b3c6c519a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_dc5d36220c33467a929500584f26aeaa = $('<div id="html_dc5d36220c33467a929500584f26aeaa" style="width: 100.0%; height: 100.0%;">City: Berkeley<br>Population: 122324<br>BreweryCount: 21<br>People per Brewery: 5824</div>')[0];
+                popup_e2fcdc0a90ef4b21b1f417b3c6c519a7.setContent(html_dc5d36220c33467a929500584f26aeaa);
+            
+
+            marker_cf2da9a33cac4b0fb267dccb69ee1a28.bindPopup(popup_e2fcdc0a90ef4b21b1f417b3c6c519a7);
+
+            
+        
+    
+
+            var marker_7ea8e170e18e4600b0eeee9c12e0e1d3 = L.marker(
+                [33.7366,-117.8819],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_fb4972d097094b79a34a7aca165326a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9e83e8e62404f56b9b734497119f42a = $('<div id="html_e9e83e8e62404f56b9b734497119f42a" style="width: 100.0%; height: 100.0%;">City: Santa Ana<br>Population: 334136<br>BreweryCount: 20<br>People per Brewery: 16706</div>')[0];
+                popup_fb4972d097094b79a34a7aca165326a8.setContent(html_e9e83e8e62404f56b9b734497119f42a);
+            
+
+            marker_7ea8e170e18e4600b0eeee9c12e0e1d3.bindPopup(popup_fb4972d097094b79a34a7aca165326a8);
+
+            
+        
+    
+
+            var marker_4975d9ad18e140e884805b4b4c19ba8b = L.marker(
+                [48.7543,-122.4687],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_d962c58cafeb43e5af91ecafa9244a13 = L.popup({maxWidth: '300'});
+
+            
+                var html_b7a0d5573cca4559be1e212697acd0b0 = $('<div id="html_b7a0d5573cca4559be1e212697acd0b0" style="width: 100.0%; height: 100.0%;">City: Bellingham<br>Population: 126015<br>BreweryCount: 20<br>People per Brewery: 6300</div>')[0];
+                popup_d962c58cafeb43e5af91ecafa9244a13.setContent(html_b7a0d5573cca4559be1e212697acd0b0);
+            
+
+            marker_4975d9ad18e140e884805b4b4c19ba8b.bindPopup(popup_d962c58cafeb43e5af91ecafa9244a13);
+
+            
+        
+    
+
+            var marker_93441b01a8da436185d19869b60dd29f = L.marker(
+                [33.4928,-117.1314],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_e876152f324f408abf4efbd093eac614 = L.popup({maxWidth: '300'});
+
+            
+                var html_2980ccdc794c4b379d6f4cdf451a2fc2 = $('<div id="html_2980ccdc794c4b379d6f4cdf451a2fc2" style="width: 100.0%; height: 100.0%;">City: Temecula<br>Population: 114327<br>BreweryCount: 19<br>People per Brewery: 6017</div>')[0];
+                popup_e876152f324f408abf4efbd093eac614.setContent(html_2980ccdc794c4b379d6f4cdf451a2fc2);
+            
+
+            marker_93441b01a8da436185d19869b60dd29f.bindPopup(popup_e876152f324f408abf4efbd093eac614);
+
+            
+        
+    
+
+            var marker_3c9af2bc22a3469fa32a1c1021e18554 = L.marker(
+                [33.696,-118.0025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2fb8016ebf104dad9e37527b1c79fe5c = L.popup({maxWidth: '300'});
+
+            
+                var html_dd378147abf14a21901e569934ce1f95 = $('<div id="html_dd378147abf14a21901e569934ce1f95" style="width: 100.0%; height: 100.0%;">City: Huntington Beach<br>Population: 201874<br>BreweryCount: 19<br>People per Brewery: 10624</div>')[0];
+                popup_2fb8016ebf104dad9e37527b1c79fe5c.setContent(html_dd378147abf14a21901e569934ce1f95);
+            
+
+            marker_3c9af2bc22a3469fa32a1c1021e18554.bindPopup(popup_2fb8016ebf104dad9e37527b1c79fe5c);
+
+            
+        
+    
+
+            var marker_6c710a716d154f0a8b483d948c291819 = L.marker(
+                [33.1349,-117.1744],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_612ca5a8abf448a7843a6e87442a7bba = L.popup({maxWidth: '300'});
+
+            
+                var html_b5383ee51d0049938fa925d7ae26ec13 = $('<div id="html_b5383ee51d0049938fa925d7ae26ec13" style="width: 100.0%; height: 100.0%;">City: San Marcos<br>Population: 96198<br>BreweryCount: 19<br>People per Brewery: 5063</div>')[0];
+                popup_612ca5a8abf448a7843a6e87442a7bba.setContent(html_b5383ee51d0049938fa925d7ae26ec13);
+            
+
+            marker_6c710a716d154f0a8b483d948c291819.bindPopup(popup_612ca5a8abf448a7843a6e87442a7bba);
+
+            
+        
+    
+
+            var marker_44858318408e405084dca015550c7c70 = L.marker(
+                [45.4779,-122.8168],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_95267a9ebf7342728c043f698d2e8eef = L.popup({maxWidth: '300'});
+
+            
+                var html_e301148919ba4606b8688f0534b74a05 = $('<div id="html_e301148919ba4606b8688f0534b74a05" style="width: 100.0%; height: 100.0%;">City: Beaverton<br>Population: 97514<br>BreweryCount: 18<br>People per Brewery: 5417</div>')[0];
+                popup_95267a9ebf7342728c043f698d2e8eef.setContent(html_e301148919ba4606b8688f0534b74a05);
+            
+
+            marker_44858318408e405084dca015550c7c70.bindPopup(popup_95267a9ebf7342728c043f698d2e8eef);
+
+            
+        
+    
+
+            var marker_af4f5e64347a47e99066dc590fe369f7 = L.marker(
+                [33.9147,-118.3476],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_5e0206f344414ace99ace0672c2facfe = L.popup({maxWidth: '300'});
+
+            
+                var html_ea6aa97aeb2e43b682d7cccd18f3479c = $('<div id="html_ea6aa97aeb2e43b682d7cccd18f3479c" style="width: 100.0%; height: 100.0%;">City: Hawthorne<br>Population: 87854<br>BreweryCount: 17<br>People per Brewery: 5167</div>')[0];
+                popup_5e0206f344414ace99ace0672c2facfe.setContent(html_ea6aa97aeb2e43b682d7cccd18f3479c);
+            
+
+            marker_af4f5e64347a47e99066dc590fe369f7.bindPopup(popup_5e0206f344414ace99ace0672c2facfe);
+
+            
+        
+    
+
+            var marker_60280fc9e7b04277863898d1f2660ac2 = L.marker(
+                [37.5026,-122.2252],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f7a346fd168146818a55fc6e2bc0cb4a = L.popup({maxWidth: '300'});
+
+            
+                var html_ce8fd4bfc3cd4d81836e367d4cafd013 = $('<div id="html_ce8fd4bfc3cd4d81836e367d4cafd013" style="width: 100.0%; height: 100.0%;">City: Redwood City<br>Population: 86685<br>BreweryCount: 16<br>People per Brewery: 5417</div>')[0];
+                popup_f7a346fd168146818a55fc6e2bc0cb4a.setContent(html_ce8fd4bfc3cd4d81836e367d4cafd013);
+            
+
+            marker_60280fc9e7b04277863898d1f2660ac2.bindPopup(popup_f7a346fd168146818a55fc6e2bc0cb4a);
+
+            
+        
+    
+
+            var marker_051d75e196e34b6db302acb250cb8331 = L.marker(
+                [37.3018,-121.8485],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_d6736cd4ded4424ebfa617697731e81d = L.popup({maxWidth: '300'});
+
+            
+                var html_5283ab755e3241e68ac26f4a1fe9a6e8 = $('<div id="html_5283ab755e3241e68ac26f4a1fe9a6e8" style="width: 100.0%; height: 100.0%;">City: San Jose<br>Population: 1821899<br>BreweryCount: 16<br>People per Brewery: 113868</div>')[0];
+                popup_d6736cd4ded4424ebfa617697731e81d.setContent(html_5283ab755e3241e68ac26f4a1fe9a6e8);
+            
+
+            marker_051d75e196e34b6db302acb250cb8331.bindPopup(popup_d6736cd4ded4424ebfa617697731e81d);
+
+            
+        
+    
+
+            var marker_1c347e41a73f4fd29a9f44918ede83ed = L.marker(
+                [33.8038,-117.8219],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_bb6e38ec892b4ff18435ea0905cc7ebf = L.popup({maxWidth: '300'});
+
+            
+                var html_9a42a32bbd2a476aa3ca2d71c564f4ee = $('<div id="html_9a42a32bbd2a476aa3ca2d71c564f4ee" style="width: 100.0%; height: 100.0%;">City: Orange<br>Population: 140560<br>BreweryCount: 15<br>People per Brewery: 9370</div>')[0];
+                popup_bb6e38ec892b4ff18435ea0905cc7ebf.setContent(html_9a42a32bbd2a476aa3ca2d71c564f4ee);
+            
+
+            marker_1c347e41a73f4fd29a9f44918ede83ed.bindPopup(popup_bb6e38ec892b4ff18435ea0905cc7ebf);
+
+            
+        
+    
+
+            var marker_74b41081022048ee8220591be87ccb71 = L.marker(
+                [38.4465,-122.706],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_6884a75119934b59b5b9da38c4067204 = L.popup({maxWidth: '300'});
+
+            
+                var html_6411f55ae5f64d14aa37b36620dd1dfe = $('<div id="html_6411f55ae5f64d14aa37b36620dd1dfe" style="width: 100.0%; height: 100.0%;">City: Santa Rosa<br>Population: 321908<br>BreweryCount: 15<br>People per Brewery: 21460</div>')[0];
+                popup_6884a75119934b59b5b9da38c4067204.setContent(html_6411f55ae5f64d14aa37b36620dd1dfe);
+            
+
+            marker_74b41081022048ee8220591be87ccb71.bindPopup(popup_6884a75119934b59b5b9da38c4067204);
+
+            
+        
+    
+
+            var marker_3f5205e34d21490eb399b4c10c6a6dc7 = L.marker(
+                [45.5271,-122.9358],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_1d09abe6afb644cda39dd36afd531c72 = L.popup({maxWidth: '300'});
+
+            
+                var html_701391c0f6b7478bbbf322a3f086a3f6 = $('<div id="html_701391c0f6b7478bbbf322a3f086a3f6" style="width: 100.0%; height: 100.0%;">City: Hillsboro<br>Population: 106894<br>BreweryCount: 15<br>People per Brewery: 7126</div>')[0];
+                popup_1d09abe6afb644cda39dd36afd531c72.setContent(html_701391c0f6b7478bbbf322a3f086a3f6);
+            
+
+            marker_3f5205e34d21490eb399b4c10c6a6dc7.bindPopup(popup_1d09abe6afb644cda39dd36afd531c72);
+
+            
+        
+    
+
+            var marker_45e30f5603034c268043a7f3ff02abb6 = L.marker(
+                [34.4285,-119.7202],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_179553d985c04deaadcc26e162611239 = L.popup({maxWidth: '300'});
+
+            
+                var html_fe548f43598b44d6b85f62ad3fb50350 = $('<div id="html_fe548f43598b44d6b85f62ad3fb50350" style="width: 100.0%; height: 100.0%;">City: Santa Barbara<br>Population: 204034<br>BreweryCount: 14<br>People per Brewery: 14573</div>')[0];
+                popup_179553d985c04deaadcc26e162611239.setContent(html_fe548f43598b44d6b85f62ad3fb50350);
+            
+
+            marker_45e30f5603034c268043a7f3ff02abb6.bindPopup(popup_179553d985c04deaadcc26e162611239);
+
+            
+        
+    
+
+            var marker_2a56a769513246f3ae6dd5b1fcbad10a = L.marker(
+                [34.1879,-118.3234],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_d8b3e65b8c904e7391517c607d311d72 = L.popup({maxWidth: '300'});
+
+            
+                var html_e715af0c8ce94a4b8dd9cf323271f0be = $('<div id="html_e715af0c8ce94a4b8dd9cf323271f0be" style="width: 100.0%; height: 100.0%;">City: Burbank<br>Population: 104834<br>BreweryCount: 14<br>People per Brewery: 7488</div>')[0];
+                popup_d8b3e65b8c904e7391517c607d311d72.setContent(html_e715af0c8ce94a4b8dd9cf323271f0be);
+            
+
+            marker_2a56a769513246f3ae6dd5b1fcbad10a.bindPopup(popup_d8b3e65b8c904e7391517c607d311d72);
+
+            
+        
+    
+
+            var marker_ea4746577197461693a414c2ca38751b = L.marker(
+                [39.5497,-119.8483],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_549694b95c31499ebc5f370a87cc7d67 = L.popup({maxWidth: '300'});
+
+            
+                var html_095fc4ea839a41dea4cf5da9e1d933b6 = $('<div id="html_095fc4ea839a41dea4cf5da9e1d933b6" style="width: 100.0%; height: 100.0%;">City: Reno<br>Population: 433271<br>BreweryCount: 14<br>People per Brewery: 30947</div>')[0];
+                popup_549694b95c31499ebc5f370a87cc7d67.setContent(html_095fc4ea839a41dea4cf5da9e1d933b6);
+            
+
+            marker_ea4746577197461693a414c2ca38751b.bindPopup(popup_549694b95c31499ebc5f370a87cc7d67);
+
+            
+        
+    
+
+            var marker_7bded4594afb4b3c803f9cdf1c668892 = L.marker(
+                [33.1246,-117.2837],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_3bb620f4499d4b5da6250a0cf01b355f = L.popup({maxWidth: '300'});
+
+            
+                var html_daf9ddac7e1b43b4910e2d47640de2d7 = $('<div id="html_daf9ddac7e1b43b4910e2d47640de2d7" style="width: 100.0%; height: 100.0%;">City: Carlsbad<br>Population: 115330<br>BreweryCount: 14<br>People per Brewery: 8237</div>')[0];
+                popup_3bb620f4499d4b5da6250a0cf01b355f.setContent(html_daf9ddac7e1b43b4910e2d47640de2d7);
+            
+
+            marker_7bded4594afb4b3c803f9cdf1c668892.bindPopup(popup_3bb620f4499d4b5da6250a0cf01b355f);
+
+            
+        
+    
+
+            var marker_dd6b760aae834e6abcc1dada0933377b = L.marker(
+                [33.7309,-117.8106],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_d08d8cd22b854aa69b40ca3d915bf12b = L.popup({maxWidth: '300'});
+
+            
+                var html_181fc54c6923438e810f3aefde6e2f3c = $('<div id="html_181fc54c6923438e810f3aefde6e2f3c" style="width: 100.0%; height: 100.0%;">City: Tustin<br>Population: 80498<br>BreweryCount: 13<br>People per Brewery: 6192</div>')[0];
+                popup_d08d8cd22b854aa69b40ca3d915bf12b.setContent(html_181fc54c6923438e810f3aefde6e2f3c);
+            
+
+            marker_dd6b760aae834e6abcc1dada0933377b.bindPopup(popup_d08d8cd22b854aa69b40ca3d915bf12b);
+
+            
+        
+    
+
+            var marker_8719093a8d554ec497847ee9df2b2f23 = L.marker(
+                [33.6667,-117.9135],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a16a358560ae4195bb959be94efd2806 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2560163c9774647a0d06cc2a56f9636 = $('<div id="html_d2560163c9774647a0d06cc2a56f9636" style="width: 100.0%; height: 100.0%;">City: Costa Mesa<br>Population: 113825<br>BreweryCount: 13<br>People per Brewery: 8755</div>')[0];
+                popup_a16a358560ae4195bb959be94efd2806.setContent(html_d2560163c9774647a0d06cc2a56f9636);
+            
+
+            marker_8719093a8d554ec497847ee9df2b2f23.bindPopup(popup_a16a358560ae4195bb959be94efd2806);
+
+            
+        
+    
+
+            var marker_614d520ebff4433d8ffe48756b21cd4f = L.marker(
+                [44.9232,-123.0245],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b574ebe0a005416eac236e7bd9b0f887 = L.popup({maxWidth: '300'});
+
+            
+                var html_d77408dded4a45dbb0854a4353ff8b01 = $('<div id="html_d77408dded4a45dbb0854a4353ff8b01" style="width: 100.0%; height: 100.0%;">City: Salem<br>Population: 259816<br>BreweryCount: 13<br>People per Brewery: 19985</div>')[0];
+                popup_b574ebe0a005416eac236e7bd9b0f887.setContent(html_d77408dded4a45dbb0854a4353ff8b01);
+            
+
+            marker_614d520ebff4433d8ffe48756b21cd4f.bindPopup(popup_b574ebe0a005416eac236e7bd9b0f887);
+
+            
+        
+    
+
+            var marker_b3fc06c6ec4645f49b53133c146af38b = L.marker(
+                [37.3835,-122.0257],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_009ad9deb03c44e09cbb0cf75ea15526 = L.popup({maxWidth: '300'});
+
+            
+                var html_11025874de4b46e59f8b600afd429c82 = $('<div id="html_11025874de4b46e59f8b600afd429c82" style="width: 100.0%; height: 100.0%;">City: Sunnyvale<br>Population: 153656<br>BreweryCount: 12<br>People per Brewery: 12804</div>')[0];
+                popup_009ad9deb03c44e09cbb0cf75ea15526.setContent(html_11025874de4b46e59f8b600afd429c82);
+            
+
+            marker_b3fc06c6ec4645f49b53133c146af38b.bindPopup(popup_009ad9deb03c44e09cbb0cf75ea15526);
+
+            
+        
+    
+
+            var marker_f41b3d7119234dae9a0dbb0a0ce74525 = L.marker(
+                [45.6352,-122.597],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_02235b1917194434b90bcc7703ce02b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_3efc50adf4e944e0809c3224684eaf16 = $('<div id="html_3efc50adf4e944e0809c3224684eaf16" style="width: 100.0%; height: 100.0%;">City: Vancouver<br>Population: 175673<br>BreweryCount: 12<br>People per Brewery: 14639</div>')[0];
+                popup_02235b1917194434b90bcc7703ce02b6.setContent(html_3efc50adf4e944e0809c3224684eaf16);
+            
+
+            marker_f41b3d7119234dae9a0dbb0a0ce74525.bindPopup(popup_02235b1917194434b90bcc7703ce02b6);
+
+            
+        
+    
+
+            var marker_dea87a2ce05e48b8bc7caab4baefbaad = L.marker(
+                [37.3646,-121.9679],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2e19f78baa3e42e0bba97c9345978ea8 = L.popup({maxWidth: '300'});
+
+            
+                var html_6432c516b13e492c9fc5d9354b83b054 = $('<div id="html_6432c516b13e492c9fc5d9354b83b054" style="width: 100.0%; height: 100.0%;">City: Santa Clara<br>Population: 127134<br>BreweryCount: 12<br>People per Brewery: 10594</div>')[0];
+                popup_2e19f78baa3e42e0bba97c9345978ea8.setContent(html_6432c516b13e492c9fc5d9354b83b054);
+            
+
+            marker_dea87a2ce05e48b8bc7caab4baefbaad.bindPopup(popup_2e19f78baa3e42e0bba97c9345978ea8);
+
+            
+        
+    
+
+            var marker_5fad60b73d4a4efc839756d1138102c3 = L.marker(
+                [33.2247,-117.3083],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_3dd28571822b474c9a9f349c9011f89d = L.popup({maxWidth: '300'});
+
+            
+                var html_78f8ea8c48454aeeb7a13eb081d72730 = $('<div id="html_78f8ea8c48454aeeb7a13eb081d72730" style="width: 100.0%; height: 100.0%;">City: Oceanside<br>Population: 176193<br>BreweryCount: 12<br>People per Brewery: 14682</div>')[0];
+                popup_3dd28571822b474c9a9f349c9011f89d.setContent(html_78f8ea8c48454aeeb7a13eb081d72730);
+            
+
+            marker_5fad60b73d4a4efc839756d1138102c3.bindPopup(popup_3dd28571822b474c9a9f349c9011f89d);
+
+            
+        
+    
+
+            var marker_3347c33e46534ce6a918e642d5ca7349 = L.marker(
+                [33.7787,-117.9601],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_8c79e584627f4752af8c51afeaed20b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_716aa134b7f64d95812f7df47b428240 = $('<div id="html_716aa134b7f64d95812f7df47b428240" style="width: 100.0%; height: 100.0%;">City: Garden Grove<br>Population: 174226<br>BreweryCount: 12<br>People per Brewery: 14518</div>')[0];
+                popup_8c79e584627f4752af8c51afeaed20b5.setContent(html_716aa134b7f64d95812f7df47b428240);
+            
+
+            marker_3347c33e46534ce6a918e642d5ca7349.bindPopup(popup_8c79e584627f4752af8c51afeaed20b5);
+
+            
+        
+    
+
+            var marker_92d8df4be6f9448292a5edd49eb23184 = L.marker(
+                [46.5923,-120.5496],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a7f6085e8a424867884081eb771dfdf4 = L.popup({maxWidth: '300'});
+
+            
+                var html_fbb80b6363ad43fab207c212c2753160 = $('<div id="html_fbb80b6363ad43fab207c212c2753160" style="width: 100.0%; height: 100.0%;">City: Yakima<br>Population: 133233<br>BreweryCount: 12<br>People per Brewery: 11102</div>')[0];
+                popup_a7f6085e8a424867884081eb771dfdf4.setContent(html_fbb80b6363ad43fab207c212c2753160);
+            
+
+            marker_92d8df4be6f9448292a5edd49eb23184.bindPopup(popup_a7f6085e8a424867884081eb771dfdf4);
+
+            
+        
+    
+
+            var marker_5177f749f55b44deb123538bb16f51eb = L.marker(
+                [37.4,-122.0796],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_cc379e12ac434ffe9082739ad3776a68 = L.popup({maxWidth: '300'});
+
+            
+                var html_dec49fcf84b34b43a14bec7e2c6e4adb = $('<div id="html_dec49fcf84b34b43a14bec7e2c6e4adb" style="width: 100.0%; height: 100.0%;">City: Mountain View<br>Population: 81438<br>BreweryCount: 11<br>People per Brewery: 7403</div>')[0];
+                popup_cc379e12ac434ffe9082739ad3776a68.setContent(html_dec49fcf84b34b43a14bec7e2c6e4adb);
+            
+
+            marker_5177f749f55b44deb123538bb16f51eb.bindPopup(popup_cc379e12ac434ffe9082739ad3776a68);
+
+            
+        
+    
+
+            var marker_95d0796c87364fb2a60afe0224490bd5 = L.marker(
+                [33.7523,-117.9938],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_d08d5680573a4d079366a49b26fe4e14 = L.popup({maxWidth: '300'});
+
+            
+                var html_6b5256e9e6594ac89f96af58d03d4af1 = $('<div id="html_6b5256e9e6594ac89f96af58d03d4af1" style="width: 100.0%; height: 100.0%;">City: Westminster<br>Population: 91564<br>BreweryCount: 11<br>People per Brewery: 8324</div>')[0];
+                popup_d08d5680573a4d079366a49b26fe4e14.setContent(html_6b5256e9e6594ac89f96af58d03d4af1);
+            
+
+            marker_95d0796c87364fb2a60afe0224490bd5.bindPopup(popup_d08d5680573a4d079366a49b26fe4e14);
+
+            
+        
+    
+
+            var marker_825c6333dcc94e038659ca4cf9585cae = L.marker(
+                [47.0418,-122.8959],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_0f6b5f97877e43b28893193731112915 = L.popup({maxWidth: '300'});
+
+            
+                var html_072c7a4ad11b4bd59e9a3d45314d756a = $('<div id="html_072c7a4ad11b4bd59e9a3d45314d756a" style="width: 100.0%; height: 100.0%;">City: Olympia<br>Population: 196078<br>BreweryCount: 11<br>People per Brewery: 17825</div>')[0];
+                popup_0f6b5f97877e43b28893193731112915.setContent(html_072c7a4ad11b4bd59e9a3d45314d756a);
+            
+
+            marker_825c6333dcc94e038659ca4cf9585cae.bindPopup(popup_0f6b5f97877e43b28893193731112915);
+
+            
+        
+    
+
+            var marker_9069ab2b16bc4ab6bb85e5c8641bb122 = L.marker(
+                [32.8312,-117.1226],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_e1634d8a1e8b4ffa871100b459efdbef = L.popup({maxWidth: '300'});
+
+            
+                var html_0c84d6f86d4e41c4891e5cddf41b3076 = $('<div id="html_0c84d6f86d4e41c4891e5cddf41b3076" style="width: 100.0%; height: 100.0%;">City: San Diego<br>Population: 3210314<br>BreweryCount: 11<br>People per Brewery: 291846</div>')[0];
+                popup_e1634d8a1e8b4ffa871100b459efdbef.setContent(html_0c84d6f86d4e41c4891e5cddf41b3076);
+            
+
+            marker_9069ab2b16bc4ab6bb85e5c8641bb122.bindPopup(popup_e1634d8a1e8b4ffa871100b459efdbef);
+
+            
+        
+    
+
+            var marker_a187eededf8d4c80aafe1f1eb9d07673 = L.marker(
+                [37.7903,-122.2165],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_4bf22e289d144f8caa35a559c6c92737 = L.popup({maxWidth: '300'});
+
+            
+                var html_f22b3394f0af484c8402d12bd1f0923c = $('<div id="html_f22b3394f0af484c8402d12bd1f0923c" style="width: 100.0%; height: 100.0%;">City: Oakland<br>Population: 425195<br>BreweryCount: 10<br>People per Brewery: 42519</div>')[0];
+                popup_4bf22e289d144f8caa35a559c6c92737.setContent(html_f22b3394f0af484c8402d12bd1f0923c);
+            
+
+            marker_a187eededf8d4c80aafe1f1eb9d07673.bindPopup(popup_4bf22e289d144f8caa35a559c6c92737);
+
+            
+        
+    
+
+            var marker_444d6cc40a9e478eb9d9f1418a3561bc = L.marker(
+                [33.5719,-117.1909],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_6d16253d87dd49e68df7243609e45df6 = L.popup({maxWidth: '300'});
+
+            
+                var html_3c2f99d70bb34782b5e4e6dabf1a44ca = $('<div id="html_3c2f99d70bb34782b5e4e6dabf1a44ca" style="width: 100.0%; height: 100.0%;">City: Murrieta<br>Population: 483681<br>BreweryCount: 10<br>People per Brewery: 48368</div>')[0];
+                popup_6d16253d87dd49e68df7243609e45df6.setContent(html_3c2f99d70bb34782b5e4e6dabf1a44ca);
+            
+
+            marker_444d6cc40a9e478eb9d9f1418a3561bc.bindPopup(popup_6d16253d87dd49e68df7243609e45df6);
+
+            
+        
+    
+
+            var marker_c90e4c2b533240ad91a922884dbf1ef4 = L.marker(
+                [36.9788,-122.0346],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_9c3abe152ae14f45b9c5c0ac69a18216 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ca3ccbb82c944e39933b443853e98f1 = $('<div id="html_1ca3ccbb82c944e39933b443853e98f1" style="width: 100.0%; height: 100.0%;">City: Santa Cruz<br>Population: 177556<br>BreweryCount: 10<br>People per Brewery: 17755</div>')[0];
+                popup_9c3abe152ae14f45b9c5c0ac69a18216.setContent(html_1ca3ccbb82c944e39933b443853e98f1);
+            
+
+            marker_c90e4c2b533240ad91a922884dbf1ef4.bindPopup(popup_9c3abe152ae14f45b9c5c0ac69a18216);
+
+            
+        
+    
+
+            var marker_4f2587e1302c44f1be7e2bec133fbea1 = L.marker(
+                [33.8572,-118.0046],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_d6b23c3f102b4981b83830e70f77d01c = L.popup({maxWidth: '300'});
+
+            
+                var html_3fabde8c9c274e64a742393ff119c414 = $('<div id="html_3fabde8c9c274e64a742393ff119c414" style="width: 100.0%; height: 100.0%;">City: Buena Park<br>Population: 83015<br>BreweryCount: 10<br>People per Brewery: 8301</div>')[0];
+                popup_d6b23c3f102b4981b83830e70f77d01c.setContent(html_3fabde8c9c274e64a742393ff119c414);
+            
+
+            marker_4f2587e1302c44f1be7e2bec133fbea1.bindPopup(popup_d6b23c3f102b4981b83830e70f77d01c);
+
+            
+        
+    
+
+            var marker_81f859700d914f998279a47dbf61ae18 = L.marker(
+                [33.8471,-118.1221],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a8c1f245a3b047bf9095c1436df9d696 = L.popup({maxWidth: '300'});
+
+            
+                var html_c14179eed2e940d7a0f6633a92d16498 = $('<div id="html_c14179eed2e940d7a0f6633a92d16498" style="width: 100.0%; height: 100.0%;">City: Lakewood<br>Population: 80967<br>BreweryCount: 10<br>People per Brewery: 8096</div>')[0];
+                popup_a8c1f245a3b047bf9095c1436df9d696.setContent(html_c14179eed2e940d7a0f6633a92d16498);
+            
+
+            marker_81f859700d914f998279a47dbf61ae18.bindPopup(popup_a8c1f245a3b047bf9095c1436df9d696);
+
+            
+        
+    
+
+            var marker_497253ee4f07457bae959ec9ca211c03 = L.marker(
+                [47.3041,-122.211],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b263925e74fb47f68f29672a4f4a7993 = L.popup({maxWidth: '300'});
+
+            
+                var html_17bfce4be2b5497ea6ffca19f9b1ba9f = $('<div id="html_17bfce4be2b5497ea6ffca19f9b1ba9f" style="width: 100.0%; height: 100.0%;">City: Auburn<br>Population: 80776<br>BreweryCount: 10<br>People per Brewery: 8077</div>')[0];
+                popup_b263925e74fb47f68f29672a4f4a7993.setContent(html_17bfce4be2b5497ea6ffca19f9b1ba9f);
+            
+
+            marker_497253ee4f07457bae959ec9ca211c03.bindPopup(popup_b263925e74fb47f68f29672a4f4a7993);
+
+            
+        
+    
+
+            var marker_c24bfb0bc83a4c6498d8ef40dc83d8e0 = L.marker(
+                [47.6625,-117.2346],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b1203c8e55b449a1b16a6bbefd9da37b = L.popup({maxWidth: '300'});
+
+            
+                var html_af145b009a4d4b8f9c37ade0ee65bba5 = $('<div id="html_af145b009a4d4b8f9c37ade0ee65bba5" style="width: 100.0%; height: 100.0%;">City: Spokane Valley<br>Population: 97847<br>BreweryCount: 10<br>People per Brewery: 9784</div>')[0];
+                popup_b1203c8e55b449a1b16a6bbefd9da37b.setContent(html_af145b009a4d4b8f9c37ade0ee65bba5);
+            
+
+            marker_c24bfb0bc83a4c6498d8ef40dc83d8e0.bindPopup(popup_b1203c8e55b449a1b16a6bbefd9da37b);
+
+            
+        
+    
+
+            var marker_465bf52c81da453993c37e3140b902fd = L.marker(
+                [34.1598,-118.139],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a30db99022ef48648ae35486cff98cd2 = L.popup({maxWidth: '300'});
+
+            
+                var html_95d6b2b105e4442aaf1ea11f228e0e99 = $('<div id="html_95d6b2b105e4442aaf1ea11f228e0e99" style="width: 100.0%; height: 100.0%;">City: Pasadena<br>Population: 142647<br>BreweryCount: 10<br>People per Brewery: 14264</div>')[0];
+                popup_a30db99022ef48648ae35486cff98cd2.setContent(html_95d6b2b105e4442aaf1ea11f228e0e99);
+            
+
+            marker_465bf52c81da453993c37e3140b902fd.bindPopup(popup_a30db99022ef48648ae35486cff98cd2);
+
+            
+        
+    
+
+            var marker_f83b9afdc2834e0a945dd8e434737582 = L.marker(
+                [47.9524,-122.167],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_7de575af96364aa994c0f4edd191f794 = L.popup({maxWidth: '300'});
+
+            
+                var html_ab46fad8f2ae4237ab4203bca9f412be = $('<div id="html_ab46fad8f2ae4237ab4203bca9f412be" style="width: 100.0%; height: 100.0%;">City: Everett<br>Population: 110079<br>BreweryCount: 9<br>People per Brewery: 12231</div>')[0];
+                popup_7de575af96364aa994c0f4edd191f794.setContent(html_ab46fad8f2ae4237ab4203bca9f412be);
+            
+
+            marker_f83b9afdc2834e0a945dd8e434737582.bindPopup(popup_7de575af96364aa994c0f4edd191f794);
+
+            
+        
+    
+
+            var marker_95b0f1b19eea4851b05794bf3da5a427 = L.marker(
+                [36.2291,-115.2607],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_4ebda5efd40844e4b9b1a15af47a426b = L.popup({maxWidth: '300'});
+
+            
+                var html_33bbdb399e714e878905ea363153e9cf = $('<div id="html_33bbdb399e714e878905ea363153e9cf" style="width: 100.0%; height: 100.0%;">City: Las Vegas<br>Population: 2073045<br>BreweryCount: 9<br>People per Brewery: 230338</div>')[0];
+                popup_4ebda5efd40844e4b9b1a15af47a426b.setContent(html_33bbdb399e714e878905ea363153e9cf);
+            
+
+            marker_95b0f1b19eea4851b05794bf3da5a427.bindPopup(popup_4ebda5efd40844e4b9b1a15af47a426b);
+
+            
+        
+    
+
+            var marker_d23704e1ea7d4327ba45f84defc1a81e = L.marker(
+                [34.0585,-117.7625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a7f93a902bde4f588f5c572b552a7b3f = L.popup({maxWidth: '300'});
+
+            
+                var html_af132efb51a94db69b3b7f3ca01af02c = $('<div id="html_af132efb51a94db69b3b7f3ca01af02c" style="width: 100.0%; height: 100.0%;">City: Pomona<br>Population: 152939<br>BreweryCount: 9<br>People per Brewery: 16993</div>')[0];
+                popup_a7f93a902bde4f588f5c572b552a7b3f.setContent(html_af132efb51a94db69b3b7f3ca01af02c);
+            
+
+            marker_d23704e1ea7d4327ba45f84defc1a81e.bindPopup(popup_a7f93a902bde4f588f5c572b552a7b3f);
+
+            
+        
+    
+
+            var marker_7a9c50fc5efd4e6e855433480136f79f = L.marker(
+                [33.6095,-117.6551],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_80d3fc9dc9ef41d791d0c0abfcdd5fc1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5399d8b1f174d17b1bfaf81a0e46b2a = $('<div id="html_a5399d8b1f174d17b1bfaf81a0e46b2a" style="width: 100.0%; height: 100.0%;">City: Mission Viejo<br>Population: 600474<br>BreweryCount: 9<br>People per Brewery: 66719</div>')[0];
+                popup_80d3fc9dc9ef41d791d0c0abfcdd5fc1.setContent(html_a5399d8b1f174d17b1bfaf81a0e46b2a);
+            
+
+            marker_7a9c50fc5efd4e6e855433480136f79f.bindPopup(popup_80d3fc9dc9ef41d791d0c0abfcdd5fc1);
+
+            
+        
+    
+
+            var marker_93e80bc8dd9b4d1a97ee8dc2fbe9e302 = L.marker(
+                [47.6997,-122.2041],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_ba9d4e32850643febe8f2b97c1c2b1c0 = L.popup({maxWidth: '300'});
+
+            
+                var html_cfa4f2b53e624cb8b2248626635eabf7 = $('<div id="html_cfa4f2b53e624cb8b2248626635eabf7" style="width: 100.0%; height: 100.0%;">City: Kirkland<br>Population: 88630<br>BreweryCount: 8<br>People per Brewery: 11078</div>')[0];
+                popup_ba9d4e32850643febe8f2b97c1c2b1c0.setContent(html_cfa4f2b53e624cb8b2248626635eabf7);
+            
+
+            marker_93e80bc8dd9b4d1a97ee8dc2fbe9e302.bindPopup(popup_ba9d4e32850643febe8f2b97c1c2b1c0);
+
+            
+        
+    
+
+            var marker_18812bab9b154d99881c0185c54c7921 = L.marker(
+                [39.5729,-119.7157],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f960efc92bd44d5d8ca149acf25534c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_250f4bbbf14842288c7fa93fe76546d5 = $('<div id="html_250f4bbbf14842288c7fa93fe76546d5" style="width: 100.0%; height: 100.0%;">City: Sparks<br>Population: 100888<br>BreweryCount: 8<br>People per Brewery: 12611</div>')[0];
+                popup_f960efc92bd44d5d8ca149acf25534c3.setContent(html_250f4bbbf14842288c7fa93fe76546d5);
+            
+
+            marker_18812bab9b154d99881c0185c54c7921.bindPopup(popup_f960efc92bd44d5d8ca149acf25534c3);
+
+            
+        
+    
+
+            var marker_f74fdef8c2164bbfaae2fa77509ac57f = L.marker(
+                [47.5436,-122.7122],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_95232449ebb246a3b2a85f34268bbd98 = L.popup({maxWidth: '300'});
+
+            
+                var html_512e6d5f638b4a5c86de800445ad8daf = $('<div id="html_512e6d5f638b4a5c86de800445ad8daf" style="width: 100.0%; height: 100.0%;">City: Bremerton<br>Population: 216480<br>BreweryCount: 8<br>People per Brewery: 27060</div>')[0];
+                popup_95232449ebb246a3b2a85f34268bbd98.setContent(html_512e6d5f638b4a5c86de800445ad8daf);
+            
+
+            marker_f74fdef8c2164bbfaae2fa77509ac57f.bindPopup(popup_95232449ebb246a3b2a85f34268bbd98);
+
+            
+        
+    
+
+            var marker_5b4704a333dc4dd1a4f09716e31c97d9 = L.marker(
+                [34.1818,-118.2468],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_733683efa4c7452dac76a63ab5177efd = L.popup({maxWidth: '300'});
+
+            
+                var html_d9dbef61571f46ffa5c8de4b2831175f = $('<div id="html_d9dbef61571f46ffa5c8de4b2831175f" style="width: 100.0%; height: 100.0%;">City: Glendale<br>Population: 203054<br>BreweryCount: 8<br>People per Brewery: 25381</div>')[0];
+                popup_733683efa4c7452dac76a63ab5177efd.setContent(html_d9dbef61571f46ffa5c8de4b2831175f);
+            
+
+            marker_5b4704a333dc4dd1a4f09716e31c97d9.bindPopup(popup_733683efa4c7452dac76a63ab5177efd);
+
+            
+        
+    
+
+            var marker_ea36e9b9268c47b0b11ecaac76b3edcb = L.marker(
+                [33.8374,-118.2559],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_0e8d0f9d2210421990b1f6482e9e74ec = L.popup({maxWidth: '300'});
+
+            
+                var html_d679d01783c044749172ca1b011c1751 = $('<div id="html_d679d01783c044749172ca1b011c1751" style="width: 100.0%; height: 100.0%;">City: Carson<br>Population: 92735<br>BreweryCount: 8<br>People per Brewery: 11591</div>')[0];
+                popup_0e8d0f9d2210421990b1f6482e9e74ec.setContent(html_d679d01783c044749172ca1b011c1751);
+            
+
+            marker_ea36e9b9268c47b0b11ecaac76b3edcb.bindPopup(popup_0e8d0f9d2210421990b1f6482e9e74ec);
+
+            
+        
+    
+
+            var marker_85b1f5685f3b4a598a4b3c5933b861d0 = L.marker(
+                [34.0232,-118.4813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_789797e329274e51bc5f907c080c6260 = L.popup({maxWidth: '300'});
+
+            
+                var html_66305a832480432181d84c6399b771c3 = $('<div id="html_66305a832480432181d84c6399b771c3" style="width: 100.0%; height: 100.0%;">City: Santa Monica<br>Population: 92306<br>BreweryCount: 8<br>People per Brewery: 11538</div>')[0];
+                popup_789797e329274e51bc5f907c080c6260.setContent(html_66305a832480432181d84c6399b771c3);
+            
+
+            marker_85b1f5685f3b4a598a4b3c5933b861d0.bindPopup(popup_789797e329274e51bc5f907c080c6260);
+
+            
+        
+    
+
+            var marker_54d60080c34d40ddb65b25bda5ba07b8 = L.marker(
+                [40.5698,-122.365],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_520d325ad55e48f2b4aa6d52ebea4d20 = L.popup({maxWidth: '300'});
+
+            
+                var html_fe9a80d7bee749b6a7837bf538ade835 = $('<div id="html_fe9a80d7bee749b6a7837bf538ade835" style="width: 100.0%; height: 100.0%;">City: Redding<br>Population: 120270<br>BreweryCount: 7<br>People per Brewery: 17181</div>')[0];
+                popup_520d325ad55e48f2b4aa6d52ebea4d20.setContent(html_fe9a80d7bee749b6a7837bf538ade835);
+            
+
+            marker_54d60080c34d40ddb65b25bda5ba07b8.bindPopup(popup_520d325ad55e48f2b4aa6d52ebea4d20);
+
+            
+        
+    
+
+            var marker_a2882a41126e45b4ab4bd12f3099a235 = L.marker(
+                [38.2594,-122.0319],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_83e356422e7a4c52892a1adb96445cb5 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce6082123b6f4560b50a5781bdcaecb4 = $('<div id="html_ce6082123b6f4560b50a5781bdcaecb4" style="width: 100.0%; height: 100.0%;">City: Fairfield<br>Population: 147582<br>BreweryCount: 7<br>People per Brewery: 21083</div>')[0];
+                popup_83e356422e7a4c52892a1adb96445cb5.setContent(html_ce6082123b6f4560b50a5781bdcaecb4);
+            
+
+            marker_a2882a41126e45b4ab4bd12f3099a235.bindPopup(popup_83e356422e7a4c52892a1adb96445cb5);
+
+            
+        
+    
+
+            var marker_46a51a3a9d8748f5988272678c21bb5f = L.marker(
+                [37.5522,-122.3122],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_07705ba61e7d4e6da2837cc1ddab4e0a = L.popup({maxWidth: '300'});
+
+            
+                var html_17ed5ec79235434c85c1675005acd46c = $('<div id="html_17ed5ec79235434c85c1675005acd46c" style="width: 100.0%; height: 100.0%;">City: San Mateo<br>Population: 104748<br>BreweryCount: 7<br>People per Brewery: 14964</div>')[0];
+                popup_07705ba61e7d4e6da2837cc1ddab4e0a.setContent(html_17ed5ec79235434c85c1675005acd46c);
+            
+
+            marker_46a51a3a9d8748f5988272678c21bb5f.bindPopup(popup_07705ba61e7d4e6da2837cc1ddab4e0a);
+
+            
+        
+    
+
+            var marker_7818c4b7b9e04941ae0d709a0dc7098e = L.marker(
+                [37.6861,-121.7608],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f7ad784b6a2f49ff8e2bca4fd5ad6b9d = L.popup({maxWidth: '300'});
+
+            
+                var html_87195f9158114d3a9188fdf3863178a9 = $('<div id="html_87195f9158114d3a9188fdf3863178a9" style="width: 100.0%; height: 100.0%;">City: Livermore<br>Population: 91030<br>BreweryCount: 7<br>People per Brewery: 13004</div>')[0];
+                popup_f7ad784b6a2f49ff8e2bca4fd5ad6b9d.setContent(html_87195f9158114d3a9188fdf3863178a9);
+            
+
+            marker_7818c4b7b9e04941ae0d709a0dc7098e.bindPopup(popup_f7ad784b6a2f49ff8e2bca4fd5ad6b9d);
+
+            
+        
+    
+
+            var marker_32884e0af6dd4ca3b0525393edd633f7 = L.marker(
+                [42.3372,-122.8537],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_207a5ab077934d6caae64ad4ff487eaa = L.popup({maxWidth: '300'});
+
+            
+                var html_ddb99a70d5e041158d10653dd9999ccc = $('<div id="html_ddb99a70d5e041158d10653dd9999ccc" style="width: 100.0%; height: 100.0%;">City: Medford<br>Population: 168219<br>BreweryCount: 7<br>People per Brewery: 24031</div>')[0];
+                popup_207a5ab077934d6caae64ad4ff487eaa.setContent(html_ddb99a70d5e041158d10653dd9999ccc);
+            
+
+            marker_32884e0af6dd4ca3b0525393edd633f7.bindPopup(popup_207a5ab077934d6caae64ad4ff487eaa);
+
+            
+        
+    
+
+            var marker_5cd5d304cde648c0ab2b1a6b69938844 = L.marker(
+                [34.1247,-117.5664],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a7fcf1bdcc57496ab083721a30e0395f = L.popup({maxWidth: '300'});
+
+            
+                var html_10b459fbf40647f2986446dfb3c9cbdc = $('<div id="html_10b459fbf40647f2986446dfb3c9cbdc" style="width: 100.0%; height: 100.0%;">City: Rancho Cucamonga<br>Population: 177452<br>BreweryCount: 7<br>People per Brewery: 25350</div>')[0];
+                popup_a7fcf1bdcc57496ab083721a30e0395f.setContent(html_10b459fbf40647f2986446dfb3c9cbdc);
+            
+
+            marker_5cd5d304cde648c0ab2b1a6b69938844.bindPopup(popup_a7fcf1bdcc57496ab083721a30e0395f);
+
+            
+        
+    
+
+            var marker_5fdc25a9a55c406d97fd9f873f0034d3 = L.marker(
+                [38.7691,-121.3178],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_ed43d4a473b44b7a804a625290530fcb = L.popup({maxWidth: '300'});
+
+            
+                var html_e19871ab0c8f4f0f94d1ed8501df2f1f = $('<div id="html_e19871ab0c8f4f0f94d1ed8501df2f1f" style="width: 100.0%; height: 100.0%;">City: Roseville<br>Population: 135329<br>BreweryCount: 7<br>People per Brewery: 19332</div>')[0];
+                popup_ed43d4a473b44b7a804a625290530fcb.setContent(html_e19871ab0c8f4f0f94d1ed8501df2f1f);
+            
+
+            marker_5fdc25a9a55c406d97fd9f873f0034d3.bindPopup(popup_ed43d4a473b44b7a804a625290530fcb);
+
+            
+        
+    
+
+            var marker_2e1a61ae06544039aab5a0bca608761f = L.marker(
+                [33.9379,-118.1312],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f806882e664b4e18ba3e8edf27ab5549 = L.popup({maxWidth: '300'});
+
+            
+                var html_c18563fdf48347f9896158a41e56af83 = $('<div id="html_c18563fdf48347f9896158a41e56af83" style="width: 100.0%; height: 100.0%;">City: Downey<br>Population: 113092<br>BreweryCount: 7<br>People per Brewery: 16156</div>')[0];
+                popup_f806882e664b4e18ba3e8edf27ab5549.setContent(html_c18563fdf48347f9896158a41e56af83);
+            
+
+            marker_2e1a61ae06544039aab5a0bca608761f.bindPopup(popup_f806882e664b4e18ba3e8edf27ab5549);
+
+            
+        
+    
+
+            var marker_8cd9cbffc99c47c48eaf7c8a1a18c8a7 = L.marker(
+                [37.6328,-122.0772],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_89afd925d24d4b9687a201639c635b36 = L.popup({maxWidth: '300'});
+
+            
+                var html_9e689352029a416abb109fe177ee0fb9 = $('<div id="html_9e689352029a416abb109fe177ee0fb9" style="width: 100.0%; height: 100.0%;">City: Hayward<br>Population: 160500<br>BreweryCount: 7<br>People per Brewery: 22928</div>')[0];
+                popup_89afd925d24d4b9687a201639c635b36.setContent(html_9e689352029a416abb109fe177ee0fb9);
+            
+
+            marker_8cd9cbffc99c47c48eaf7c8a1a18c8a7.bindPopup(popup_89afd925d24d4b9687a201639c635b36);
+
+            
+        
+    
+
+            var marker_ab1a2219a01a4dc98d9ac62a33f92987 = L.marker(
+                [37.6374,-121.0028],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_550c8acd6ff64be6a7055c6b7a2e37b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_420ed1701326420eb964576ccb59ee7c = $('<div id="html_420ed1701326420eb964576ccb59ee7c" style="width: 100.0%; height: 100.0%;">City: Modesto<br>Population: 381398<br>BreweryCount: 7<br>People per Brewery: 54485</div>')[0];
+                popup_550c8acd6ff64be6a7055c6b7a2e37b5.setContent(html_420ed1701326420eb964576ccb59ee7c);
+            
+
+            marker_ab1a2219a01a4dc98d9ac62a33f92987.bindPopup(popup_550c8acd6ff64be6a7055c6b7a2e37b5);
+
+            
+        
+    
+
+            var marker_01dd88c1bc0e4f60b08fdac345be0b2f = L.marker(
+                [34.1139,-118.4068],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_bbc073d6008d4b1899ebab94f7696d0f = L.popup({maxWidth: '300'});
+
+            
+                var html_ec5190458d1d4549bb35c1981131fb37 = $('<div id="html_ec5190458d1d4549bb35c1981131fb37" style="width: 100.0%; height: 100.0%;">City: Los Angeles<br>Population: 12815475<br>BreweryCount: 6<br>People per Brewery: 2135912</div>')[0];
+                popup_bbc073d6008d4b1899ebab94f7696d0f.setContent(html_ec5190458d1d4549bb35c1981131fb37);
+            
+
+            marker_01dd88c1bc0e4f60b08fdac345be0b2f.bindPopup(popup_bbc073d6008d4b1899ebab94f7696d0f);
+
+            
+        
+    
+
+            var marker_ea086163b5cd429d937956af85aad716 = L.marker(
+                [36.8278,-119.6841],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_56940949a6694f4ba50358325fe0f259 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4fb1eda179d41d2ad36cc0459e72e3e = $('<div id="html_c4fb1eda179d41d2ad36cc0459e72e3e" style="width: 100.0%; height: 100.0%;">City: Clovis<br>Population: 109691<br>BreweryCount: 6<br>People per Brewery: 18281</div>')[0];
+                popup_56940949a6694f4ba50358325fe0f259.setContent(html_c4fb1eda179d41d2ad36cc0459e72e3e);
+            
+
+            marker_ea086163b5cd429d937956af85aad716.bindPopup(popup_56940949a6694f4ba50358325fe0f259);
+
+            
+        
+    
+
+            var marker_2ab467f3348846bb92f264b2097ee73c = L.marker(
+                [36.3273,-119.3264],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_330fe2e4c2ea4be7bd89eb18c2276d09 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ff6bc38f2464043a494e19a9224af7e = $('<div id="html_7ff6bc38f2464043a494e19a9224af7e" style="width: 100.0%; height: 100.0%;">City: Visalia<br>Population: 234573<br>BreweryCount: 6<br>People per Brewery: 39095</div>')[0];
+                popup_330fe2e4c2ea4be7bd89eb18c2276d09.setContent(html_7ff6bc38f2464043a494e19a9224af7e);
+            
+
+            marker_2ab467f3348846bb92f264b2097ee73c.bindPopup(popup_330fe2e4c2ea4be7bd89eb18c2276d09);
+
+            
+        
+    
+
+            var marker_a043224a29134030910774c3d1eb983f = L.marker(
+                [33.6607,-117.6712],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_10696ecd0ef24737881561bec244231c = L.popup({maxWidth: '300'});
+
+            
+                var html_7dcf96cd27534c5a98dbdcf08fa4a919 = $('<div id="html_7dcf96cd27534c5a98dbdcf08fa4a919" style="width: 100.0%; height: 100.0%;">City: Lake Forest<br>Population: 84293<br>BreweryCount: 6<br>People per Brewery: 14048</div>')[0];
+                popup_10696ecd0ef24737881561bec244231c.setContent(html_7dcf96cd27534c5a98dbdcf08fa4a919);
+            
+
+            marker_a043224a29134030910774c3d1eb983f.bindPopup(popup_10696ecd0ef24737881561bec244231c);
+
+            
+        
+    
+
+            var marker_b0f72e68a4d64f3b9dce63a2e542bc4a = L.marker(
+                [36.0145,-115.0362],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2e506894d1df4a6ea1e510ca41523425 = L.popup({maxWidth: '300'});
+
+            
+                var html_bddf6a3fbaaa4648820c3c4988c90588 = $('<div id="html_bddf6a3fbaaa4648820c3c4988c90588" style="width: 100.0%; height: 100.0%;">City: Henderson<br>Population: 302539<br>BreweryCount: 6<br>People per Brewery: 50423</div>')[0];
+                popup_2e506894d1df4a6ea1e510ca41523425.setContent(html_bddf6a3fbaaa4648820c3c4988c90588);
+            
+
+            marker_b0f72e68a4d64f3b9dce63a2e542bc4a.bindPopup(popup_2e506894d1df4a6ea1e510ca41523425);
+
+            
+        
+    
+
+            var marker_7e6fd8604610415da9303b9de10cacf8 = L.marker(
+                [45.5023,-122.4414],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_df583ae3133349f0b0807ab7d7dc39d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2f7e57764bf4770b8c807df08d3c065 = $('<div id="html_b2f7e57764bf4770b8c807df08d3c065" style="width: 100.0%; height: 100.0%;">City: Gresham<br>Population: 111053<br>BreweryCount: 6<br>People per Brewery: 18508</div>')[0];
+                popup_df583ae3133349f0b0807ab7d7dc39d9.setContent(html_b2f7e57764bf4770b8c807df08d3c065);
+            
+
+            marker_7e6fd8604610415da9303b9de10cacf8.bindPopup(popup_df583ae3133349f0b0807ab7d7dc39d9);
+
+            
+        
+    
+
+            var marker_411fb0ad9ab44fd4b90f81dfb4a72b5a = L.marker(
+                [37.9477,-122.339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_ecf10c68681c4fb185169248d51942f1 = L.popup({maxWidth: '300'});
+
+            
+                var html_28cf9f7313d24de583001dc2a9e69642 = $('<div id="html_28cf9f7313d24de583001dc2a9e69642" style="width: 100.0%; height: 100.0%;">City: Richmond<br>Population: 110040<br>BreweryCount: 6<br>People per Brewery: 18340</div>')[0];
+                popup_ecf10c68681c4fb185169248d51942f1.setContent(html_28cf9f7313d24de583001dc2a9e69642);
+            
+
+            marker_411fb0ad9ab44fd4b90f81dfb4a72b5a.bindPopup(popup_ecf10c68681c4fb185169248d51942f1);
+
+            
+        
+    
+
+            var marker_6324912738804166b216485dd0f0ac8f = L.marker(
+                [47.4758,-122.1905],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_92b55955ca2a4465a390e0df41efed2e = L.popup({maxWidth: '300'});
+
+            
+                var html_a4163c26b0ab4d7999326f1cb00295c8 = $('<div id="html_a4163c26b0ab4d7999326f1cb00295c8" style="width: 100.0%; height: 100.0%;">City: Renton<br>Population: 101379<br>BreweryCount: 6<br>People per Brewery: 16896</div>')[0];
+                popup_92b55955ca2a4465a390e0df41efed2e.setContent(html_a4163c26b0ab4d7999326f1cb00295c8);
+            
+
+            marker_6324912738804166b216485dd0f0ac8f.bindPopup(popup_92b55955ca2a4465a390e0df41efed2e);
+
+            
+        
+    
+
+            var marker_45e71fca0a194a3599b9834a90d022b8 = L.marker(
+                [37.5265,-121.9852],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b667de37acd74767b6400c650dc0a14b = L.popup({maxWidth: '300'});
+
+            
+                var html_0af033507ad94c30907f6543c895ba8f = $('<div id="html_0af033507ad94c30907f6543c895ba8f" style="width: 100.0%; height: 100.0%;">City: Fremont<br>Population: 234962<br>BreweryCount: 6<br>People per Brewery: 39160</div>')[0];
+                popup_b667de37acd74767b6400c650dc0a14b.setContent(html_0af033507ad94c30907f6543c895ba8f);
+            
+
+            marker_45e71fca0a194a3599b9834a90d022b8.bindPopup(popup_b667de37acd74767b6400c650dc0a14b);
+
+            
+        
+    
+
+            var marker_101dec0f51f342b6b9d1e768b8fab4d7 = L.marker(
+                [34.074,-118.0291],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f99631084c4b4a6dbbfe88b550b6218f = L.popup({maxWidth: '300'});
+
+            
+                var html_683f52918ba84c24b6db04c4f1eea5a0 = $('<div id="html_683f52918ba84c24b6db04c4f1eea5a0" style="width: 100.0%; height: 100.0%;">City: El Monte<br>Population: 116109<br>BreweryCount: 6<br>People per Brewery: 19351</div>')[0];
+                popup_f99631084c4b4a6dbbfe88b550b6218f.setContent(html_683f52918ba84c24b6db04c4f1eea5a0);
+            
+
+            marker_101dec0f51f342b6b9d1e768b8fab4d7.bindPopup(popup_f99631084c4b4a6dbbfe88b550b6218f);
+
+            
+        
+    
+
+            var marker_e0f1295622384001bfefad6fb184a5e5 = L.marker(
+                [33.9381,-117.3948],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_76158d61d2194b52a28e75e1234ef185 = L.popup({maxWidth: '300'});
+
+            
+                var html_652e37759c2f4fbc878c60c747682c42 = $('<div id="html_652e37759c2f4fbc878c60c747682c42" style="width: 100.0%; height: 100.0%;">City: Riverside<br>Population: 2084749<br>BreweryCount: 6<br>People per Brewery: 347458</div>')[0];
+                popup_76158d61d2194b52a28e75e1234ef185.setContent(html_652e37759c2f4fbc878c60c747682c42);
+            
+
+            marker_e0f1295622384001bfefad6fb184a5e5.bindPopup(popup_76158d61d2194b52a28e75e1234ef185);
+
+            
+        
+    
+
+            var marker_17a8a1fac7bf41df9dac1288f637ed39 = L.marker(
+                [47.7039,-116.7933],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_420a0be946be43fa81595e549cdd1410 = L.popup({maxWidth: '300'});
+
+            
+                var html_27843958e1c64aeb9e2de4bd1a0a9a20 = $('<div id="html_27843958e1c64aeb9e2de4bd1a0a9a20" style="width: 100.0%; height: 100.0%;">City: Coeur dAlene<br>Population: 112935<br>BreweryCount: 5<br>People per Brewery: 22587</div>')[0];
+                popup_420a0be946be43fa81595e549cdd1410.setContent(html_27843958e1c64aeb9e2de4bd1a0a9a20);
+            
+
+            marker_17a8a1fac7bf41df9dac1288f637ed39.bindPopup(popup_420a0be946be43fa81595e549cdd1410);
+
+            
+        
+    
+
+            var marker_be3c31afe0504c24b483346b64fd03a3 = L.marker(
+                [37.7071,-122.1601],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b13422ac6b984fccaa3eb21adea5a37b = L.popup({maxWidth: '300'});
+
+            
+                var html_5ce6f620b03640a89ee8e6900fd4fc73 = $('<div id="html_5ce6f620b03640a89ee8e6900fd4fc73" style="width: 100.0%; height: 100.0%;">City: San Leandro<br>Population: 90553<br>BreweryCount: 5<br>People per Brewery: 18110</div>')[0];
+                popup_b13422ac6b984fccaa3eb21adea5a37b.setContent(html_5ce6f620b03640a89ee8e6900fd4fc73);
+            
+
+            marker_be3c31afe0504c24b483346b64fd03a3.bindPopup(popup_b13422ac6b984fccaa3eb21adea5a37b);
+
+            
+        
+    
+
+            var marker_5ef232844d7d4fcfb7d7d8449ca7d37f = L.marker(
+                [33.9447,-118.1926],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_70ee62e2ce494ba3a865986649af9078 = L.popup({maxWidth: '300'});
+
+            
+                var html_c90dee41acbf42a89e2c5880bda77785 = $('<div id="html_c90dee41acbf42a89e2c5880bda77785" style="width: 100.0%; height: 100.0%;">City: South Gate<br>Population: 95430<br>BreweryCount: 5<br>People per Brewery: 19086</div>')[0];
+                popup_70ee62e2ce494ba3a865986649af9078.setContent(html_c90dee41acbf42a89e2c5880bda77785);
+            
+
+            marker_5ef232844d7d4fcfb7d7d8449ca7d37f.bindPopup(popup_70ee62e2ce494ba3a865986649af9078);
+
+            
+        
+    
+
+            var marker_c0d5c8d73a644b67b59da61903795c55 = L.marker(
+                [33.9566,-118.3444],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_e0d8d69fc36d40ee90ee380d0f610b1f = L.popup({maxWidth: '300'});
+
+            
+                var html_4c29d8524ec74fcf9bdf6a56f0e6f6aa = $('<div id="html_4c29d8524ec74fcf9bdf6a56f0e6f6aa" style="width: 100.0%; height: 100.0%;">City: Inglewood<br>Population: 110598<br>BreweryCount: 5<br>People per Brewery: 22119</div>')[0];
+                popup_e0d8d69fc36d40ee90ee380d0f610b1f.setContent(html_4c29d8524ec74fcf9bdf6a56f0e6f6aa);
+            
+
+            marker_c0d5c8d73a644b67b59da61903795c55.bindPopup(popup_e0d8d69fc36d40ee90ee380d0f610b1f);
+
+            
+        
+    
+
+            var marker_897f0d30d9a34c62bb41ce460f168bf3 = L.marker(
+                [47.3887,-122.2128],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_ca54b312fe6441ae9c5d062f5d62e867 = L.popup({maxWidth: '300'});
+
+            
+                var html_085d96a650ae4befb2c02238d90fdd0c = $('<div id="html_085d96a650ae4befb2c02238d90fdd0c" style="width: 100.0%; height: 100.0%;">City: Kent<br>Population: 128458<br>BreweryCount: 5<br>People per Brewery: 25691</div>')[0];
+                popup_ca54b312fe6441ae9c5d062f5d62e867.setContent(html_085d96a650ae4befb2c02238d90fdd0c);
+            
+
+            marker_897f0d30d9a34c62bb41ce460f168bf3.bindPopup(popup_ca54b312fe6441ae9c5d062f5d62e867);
+
+            
+        
+    
+
+            var marker_7f5e26dfa1c042ec8c6f32c5796d7d4e = L.marker(
+                [32.8017,-116.9604],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2476b785fb5849f5826c5af93601757e = L.popup({maxWidth: '300'});
+
+            
+                var html_b0a09323030e411aa49c46c9843d5ad3 = $('<div id="html_b0a09323030e411aa49c46c9843d5ad3" style="width: 100.0%; height: 100.0%;">City: El Cajon<br>Population: 103894<br>BreweryCount: 5<br>People per Brewery: 20778</div>')[0];
+                popup_2476b785fb5849f5826c5af93601757e.setContent(html_b0a09323030e411aa49c46c9843d5ad3);
+            
+
+            marker_7f5e26dfa1c042ec8c6f32c5796d7d4e.bindPopup(popup_2476b785fb5849f5826c5af93601757e);
+
+            
+        
+    
+
+            var marker_74286212f60b4c18acfdab1a801216da = L.marker(
+                [38.2977,-122.3011],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_9609ead554754c49aa64c43b6d8a35da = L.popup({maxWidth: '300'});
+
+            
+                var html_a1b05bfd50c545c48cc6252fbbaca709 = $('<div id="html_a1b05bfd50c545c48cc6252fbbaca709" style="width: 100.0%; height: 100.0%;">City: Napa<br>Population: 87032<br>BreweryCount: 5<br>People per Brewery: 17406</div>')[0];
+                popup_9609ead554754c49aa64c43b6d8a35da.setContent(html_a1b05bfd50c545c48cc6252fbbaca709);
+            
+
+            marker_74286212f60b4c18acfdab1a801216da.bindPopup(popup_9609ead554754c49aa64c43b6d8a35da);
+
+            
+        
+    
+
+            var marker_aa6f21d6d6c6450196788c855ebf69bc = L.marker(
+                [33.862,-117.5644],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b3ecd30c151c4736b9a61f43a0953c8f = L.popup({maxWidth: '300'});
+
+            
+                var html_df80234c24274006a42ce340033eb190 = $('<div id="html_df80234c24274006a42ce340033eb190" style="width: 100.0%; height: 100.0%;">City: Corona<br>Population: 167836<br>BreweryCount: 5<br>People per Brewery: 33567</div>')[0];
+                popup_b3ecd30c151c4736b9a61f43a0953c8f.setContent(html_df80234c24274006a42ce340033eb190);
+            
+
+            marker_aa6f21d6d6c6450196788c855ebf69bc.bindPopup(popup_b3ecd30c151c4736b9a61f43a0953c8f);
+
+            
+        
+    
+
+            var marker_3d7ad18612cb4723a061e7c1f59286e9 = L.marker(
+                [33.6772,-117.7738],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_45ae18cd6e31482f93eef1f5146cb0d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_ef7db8778d6748bd8967d8f4a33d175e = $('<div id="html_ef7db8778d6748bd8967d8f4a33d175e" style="width: 100.0%; height: 100.0%;">City: Irvine<br>Population: 277453<br>BreweryCount: 5<br>People per Brewery: 55490</div>')[0];
+                popup_45ae18cd6e31482f93eef1f5146cb0d2.setContent(html_ef7db8778d6748bd8967d8f4a33d175e);
+            
+
+            marker_3d7ad18612cb4723a061e7c1f59286e9.bindPopup(popup_45ae18cd6e31482f93eef1f5146cb0d2);
+
+            
+        
+    
+
+            var marker_497d03a50db74adda8462700621f8413 = L.marker(
+                [37.6664,-121.8805],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2c7a813ea63e4da29bb5ffa45ac158ca = L.popup({maxWidth: '300'});
+
+            
+                var html_06e6e148147942a9b1b1d1a02c3bea42 = $('<div id="html_06e6e148147942a9b1b1d1a02c3bea42" style="width: 100.0%; height: 100.0%;">City: Pleasanton<br>Population: 83007<br>BreweryCount: 5<br>People per Brewery: 16601</div>')[0];
+                popup_2c7a813ea63e4da29bb5ffa45ac158ca.setContent(html_06e6e148147942a9b1b1d1a02c3bea42);
+            
+
+            marker_497d03a50db74adda8462700621f8413.bindPopup(popup_2c7a813ea63e4da29bb5ffa45ac158ca);
+
+            
+        
+    
+
+            var marker_5182b060e59f4d84b422b309270aafbd = L.marker(
+                [36.6881,-121.6316],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b33dba1122ae450cbe0aadcd6b614bce = L.popup({maxWidth: '300'});
+
+            
+                var html_c3d957443f684db9a5317f1f808b8a93 = $('<div id="html_c3d957443f684db9a5317f1f808b8a93" style="width: 100.0%; height: 100.0%;">City: Salinas<br>Population: 193590<br>BreweryCount: 5<br>People per Brewery: 38718</div>')[0];
+                popup_b33dba1122ae450cbe0aadcd6b614bce.setContent(html_c3d957443f684db9a5317f1f808b8a93);
+            
+
+            marker_5182b060e59f4d84b422b309270aafbd.bindPopup(popup_b33dba1122ae450cbe0aadcd6b614bce);
+
+            
+        
+    
+
+            var marker_ea1f38e4b52f4f94811a4bc9b0f7b0a2 = L.marker(
+                [34.4155,-118.4992],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_10e4baed68984b35890df5fb4539f845 = L.popup({maxWidth: '300'});
+
+            
+                var html_4ac551b1251c421eba832589641fa197 = $('<div id="html_4ac551b1251c421eba832589641fa197" style="width: 100.0%; height: 100.0%;">City: Santa Clarita<br>Population: 309378<br>BreweryCount: 5<br>People per Brewery: 61875</div>')[0];
+                popup_10e4baed68984b35890df5fb4539f845.setContent(html_4ac551b1251c421eba832589641fa197);
+            
+
+            marker_ea1f38e4b52f4f94811a4bc9b0f7b0a2.bindPopup(popup_10e4baed68984b35890df5fb4539f845);
+
+            
+        
+    
+
+            var marker_daa0d1ec27bd429b81882ade4398374c = L.marker(
+                [33.893,-118.2275],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_9483e2fcc2c345849319cc8ba260894d = L.popup({maxWidth: '300'});
+
+            
+                var html_3af66c523700450cb3cdcb9e17af8de6 = $('<div id="html_3af66c523700450cb3cdcb9e17af8de6" style="width: 100.0%; height: 100.0%;">City: Compton<br>Population: 97612<br>BreweryCount: 5<br>People per Brewery: 19522</div>')[0];
+                popup_9483e2fcc2c345849319cc8ba260894d.setContent(html_3af66c523700450cb3cdcb9e17af8de6);
+            
+
+            marker_daa0d1ec27bd429b81882ade4398374c.bindPopup(popup_9483e2fcc2c345849319cc8ba260894d);
+
+            
+        
+    
+
+            var marker_fff0544df4794ca09f8a5f0ae6c30267 = L.marker(
+                [47.5953,-122.1551],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_71c8d498e14e4349a9657613eb8b245b = L.popup({maxWidth: '300'});
+
+            
+                var html_fbb8c8a26e0d4a039cb2905af35d548d = $('<div id="html_fbb8c8a26e0d4a039cb2905af35d548d" style="width: 100.0%; height: 100.0%;">City: Bellevue<br>Population: 144444<br>BreweryCount: 5<br>People per Brewery: 28888</div>')[0];
+                popup_71c8d498e14e4349a9657613eb8b245b.setContent(html_fbb8c8a26e0d4a039cb2905af35d548d);
+            
+
+            marker_fff0544df4794ca09f8a5f0ae6c30267.bindPopup(popup_71c8d498e14e4349a9657613eb8b245b);
+
+            
+        
+    
+
+            var marker_17ccaae1e79b4826a6de728e91560737 = L.marker(
+                [34.084,-118.1355],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_8a9dacb0d4d3471abab4c4086e2afae0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e7775df9ed1d44de9767dc97762fd96a = $('<div id="html_e7775df9ed1d44de9767dc97762fd96a" style="width: 100.0%; height: 100.0%;">City: Alhambra<br>Population: 85396<br>BreweryCount: 5<br>People per Brewery: 17079</div>')[0];
+                popup_8a9dacb0d4d3471abab4c4086e2afae0.setContent(html_e7775df9ed1d44de9767dc97762fd96a);
+            
+
+            marker_17ccaae1e79b4826a6de728e91560737.bindPopup(popup_8a9dacb0d4d3471abab4c4086e2afae0);
+
+            
+        
+    
+
+            var marker_fc5405ddd2374fc7bd55fd6f770ba6fe = L.marker(
+                [33.9508,-117.7254],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_1b9b14d5991d4717b22b00b45a90fb6e = L.popup({maxWidth: '300'});
+
+            
+                var html_c97c35cd0fdd4e67bf741563e3bea714 = $('<div id="html_c97c35cd0fdd4e67bf741563e3bea714" style="width: 100.0%; height: 100.0%;">City: Chino Hills<br>Population: 80374<br>BreweryCount: 4<br>People per Brewery: 20093</div>')[0];
+                popup_1b9b14d5991d4717b22b00b45a90fb6e.setContent(html_c97c35cd0fdd4e67bf741563e3bea714);
+            
+
+            marker_fc5405ddd2374fc7bd55fd6f770ba6fe.bindPopup(popup_1b9b14d5991d4717b22b00b45a90fb6e);
+
+            
+        
+    
+
+            var marker_85566aa7b55a4abda7f4a7d12fc6f284 = L.marker(
+                [33.6151,-117.8669],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_a3ae227cb4eb4afd8185a126ebebb587 = L.popup({maxWidth: '300'});
+
+            
+                var html_121ed3c329a24178b8b1c827382d1082 = $('<div id="html_121ed3c329a24178b8b1c827382d1082" style="width: 100.0%; height: 100.0%;">City: Newport Beach<br>Population: 86160<br>BreweryCount: 4<br>People per Brewery: 21540</div>')[0];
+                popup_a3ae227cb4eb4afd8185a126ebebb587.setContent(html_121ed3c329a24178b8b1c827382d1082);
+            
+
+            marker_85566aa7b55a4abda7f4a7d12fc6f284.bindPopup(popup_a3ae227cb4eb4afd8185a126ebebb587);
+
+            
+        
+    
+
+            var marker_1daab0f068e844a7be10680485ad46bf = L.marker(
+                [33.1347,-117.0722],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_062a146e796241bf9e2d5e020b56bc61 = L.popup({maxWidth: '300'});
+
+            
+                var html_7493b8f37bd84d39952bde38b0167cb4 = $('<div id="html_7493b8f37bd84d39952bde38b0167cb4" style="width: 100.0%; height: 100.0%;">City: Escondido<br>Population: 151969<br>BreweryCount: 4<br>People per Brewery: 37992</div>')[0];
+                popup_062a146e796241bf9e2d5e020b56bc61.setContent(html_7493b8f37bd84d39952bde38b0167cb4);
+            
+
+            marker_1daab0f068e844a7be10680485ad46bf.bindPopup(popup_062a146e796241bf9e2d5e020b56bc61);
+
+            
+        
+    
+
+            var marker_bc14058e623148a1872ce6573272d788 = L.marker(
+                [37.9766,-121.3112],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_1c14b5f857ec43b2a3dd50e9a3e27560 = L.popup({maxWidth: '300'});
+
+            
+                var html_87157c8cd459484b818003b777526be2 = $('<div id="html_87157c8cd459484b818003b777526be2" style="width: 100.0%; height: 100.0%;">City: Stockton<br>Population: 394467<br>BreweryCount: 4<br>People per Brewery: 98616</div>')[0];
+                popup_1c14b5f857ec43b2a3dd50e9a3e27560.setContent(html_87157c8cd459484b818003b777526be2);
+            
+
+            marker_bc14058e623148a1872ce6573272d788.bindPopup(popup_1c14b5f857ec43b2a3dd50e9a3e27560);
+
+            
+        
+    
+
+            var marker_7df732ee02c4498aa7478797c395d81b = L.marker(
+                [39.7574,-121.815],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_43c45c9a2b684b87a2cbbff6559cae09 = L.popup({maxWidth: '300'});
+
+            
+                var html_8640187cc24c4c3ea7acb096e1ab5184 = $('<div id="html_8640187cc24c4c3ea7acb096e1ab5184" style="width: 100.0%; height: 100.0%;">City: Chico<br>Population: 106268<br>BreweryCount: 4<br>People per Brewery: 26567</div>')[0];
+                popup_43c45c9a2b684b87a2cbbff6559cae09.setContent(html_8640187cc24c4c3ea7acb096e1ab5184);
+            
+
+            marker_7df732ee02c4498aa7478797c395d81b.bindPopup(popup_43c45c9a2b684b87a2cbbff6559cae09);
+
+            
+        
+    
+
+            var marker_73ac204ad9ab4b468ed3f612240a87de = L.marker(
+                [34.6934,-118.1753],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_605e26317b2044f8aa422640ed684b7c = L.popup({maxWidth: '300'});
+
+            
+                var html_d8d7d43c75ea4a48b0c830d8ed0b518e = $('<div id="html_d8d7d43c75ea4a48b0c830d8ed0b518e" style="width: 100.0%; height: 100.0%;">City: Lancaster<br>Population: 349218<br>BreweryCount: 4<br>People per Brewery: 87304</div>')[0];
+                popup_605e26317b2044f8aa422640ed684b7c.setContent(html_d8d7d43c75ea4a48b0c830d8ed0b518e);
+            
+
+            marker_73ac204ad9ab4b468ed3f612240a87de.bindPopup(popup_605e26317b2044f8aa422640ed684b7c);
+
+            
+        
+    
+
+            var marker_1a7472d9a32e4051bb77f2a1c0202c8e = L.marker(
+                [38.416,-121.384],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_821d44afc3cc4fcca5291fcd37c246cb = L.popup({maxWidth: '300'});
+
+            
+                var html_e7a97661adbb4d4d89f53c13a08d2172 = $('<div id="html_e7a97661adbb4d4d89f53c13a08d2172" style="width: 100.0%; height: 100.0%;">City: Elk Grove<br>Population: 171844<br>BreweryCount: 4<br>People per Brewery: 42961</div>')[0];
+                popup_821d44afc3cc4fcca5291fcd37c246cb.setContent(html_e7a97661adbb4d4d89f53c13a08d2172);
+            
+
+            marker_1a7472d9a32e4051bb77f2a1c0202c8e.bindPopup(popup_821d44afc3cc4fcca5291fcd37c246cb);
+
+            
+        
+    
+
+            var marker_da2289f5d8d846c0b44301cb9517e848 = L.marker(
+                [33.9836,-117.6653],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_c440865068024b44aac91a5a85d3415a = L.popup({maxWidth: '300'});
+
+            
+                var html_de6112eca187480486431d3b93892394 = $('<div id="html_de6112eca187480486431d3b93892394" style="width: 100.0%; height: 100.0%;">City: Chino<br>Population: 89797<br>BreweryCount: 4<br>People per Brewery: 22449</div>')[0];
+                popup_c440865068024b44aac91a5a85d3415a.setContent(html_de6112eca187480486431d3b93892394);
+            
+
+            marker_da2289f5d8d846c0b44301cb9517e848.bindPopup(popup_c440865068024b44aac91a5a85d3415a);
+
+            
+        
+    
+
+            var marker_777cabc316fe4f04822f6f9455cfcd47 = L.marker(
+                [38.1133,-122.2359],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_5d610f299d9b40e4b5083d69c9a5d482 = L.popup({maxWidth: '300'});
+
+            
+                var html_b45404d4c57649a9ad76c317c07936df = $('<div id="html_b45404d4c57649a9ad76c317c07936df" style="width: 100.0%; height: 100.0%;">City: Vallejo<br>Population: 173844<br>BreweryCount: 3<br>People per Brewery: 57948</div>')[0];
+                popup_5d610f299d9b40e4b5083d69c9a5d482.setContent(html_b45404d4c57649a9ad76c317c07936df);
+            
+
+            marker_777cabc316fe4f04822f6f9455cfcd47.bindPopup(popup_5d610f299d9b40e4b5083d69c9a5d482);
+
+            
+        
+    
+
+            var marker_6a0c4ee1ae43490bb5703d67cb50e7fa = L.marker(
+                [34.1962,-119.1819],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_e8013d6389c7485c9579ad8eb947b004 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d92674b31a94de281690c2be19f48d9 = $('<div id="html_5d92674b31a94de281690c2be19f48d9" style="width: 100.0%; height: 100.0%;">City: Oxnard<br>Population: 389792<br>BreweryCount: 3<br>People per Brewery: 129930</div>')[0];
+                popup_e8013d6389c7485c9579ad8eb947b004.setContent(html_5d92674b31a94de281690c2be19f48d9);
+            
+
+            marker_6a0c4ee1ae43490bb5703d67cb50e7fa.bindPopup(popup_e8013d6389c7485c9579ad8eb947b004);
+
+            
+        
+    
+
+            var marker_3e817ea8fcea4e6fba417e1eeaf4752a = L.marker(
+                [47.309,-122.3359],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b28d29f751df48c7b135643538a17665 = L.popup({maxWidth: '300'});
+
+            
+                var html_08f3ab88883e44418187c426e3d07266 = $('<div id="html_08f3ab88883e44418187c426e3d07266" style="width: 100.0%; height: 100.0%;">City: Federal Way<br>Population: 96690<br>BreweryCount: 3<br>People per Brewery: 32230</div>')[0];
+                popup_b28d29f751df48c7b135643538a17665.setContent(html_08f3ab88883e44418187c426e3d07266);
+            
+
+            marker_3e817ea8fcea4e6fba417e1eeaf4752a.bindPopup(popup_b28d29f751df48c7b135643538a17665);
+
+            
+        
+    
+
+            var marker_5021e1612e0948c2902126610de6f37c = L.marker(
+                [37.5053,-120.8588],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_dea003e3a7d243efb5ad39a4403c37b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cf612668ef0349c7995b1d0a58007c0f = $('<div id="html_cf612668ef0349c7995b1d0a58007c0f" style="width: 100.0%; height: 100.0%;">City: Turlock<br>Population: 107208<br>BreweryCount: 3<br>People per Brewery: 35736</div>')[0];
+                popup_dea003e3a7d243efb5ad39a4403c37b2.setContent(html_cf612668ef0349c7995b1d0a58007c0f);
+            
+
+            marker_5021e1612e0948c2902126610de6f37c.bindPopup(popup_dea003e3a7d243efb5ad39a4403c37b2);
+
+            
+        
+    
+
+            var marker_ad8597ebec06435297d3c211bdf9928c = L.marker(
+                [36.7834,-119.7941],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_38159e0d28114870adc76dfe5eb16d21 = L.popup({maxWidth: '300'});
+
+            
+                var html_642f0be3864148e7be1f60d2dd210f08 = $('<div id="html_642f0be3864148e7be1f60d2dd210f08" style="width: 100.0%; height: 100.0%;">City: Fresno<br>Population: 698021<br>BreweryCount: 3<br>People per Brewery: 232673</div>')[0];
+                popup_38159e0d28114870adc76dfe5eb16d21.setContent(html_642f0be3864148e7be1f60d2dd210f08);
+            
+
+            marker_ad8597ebec06435297d3c211bdf9928c.bindPopup(popup_38159e0d28114870adc76dfe5eb16d21);
+
+            
+        
+    
+
+            var marker_568207d2ab914e0fa6b0b42b63210b72 = L.marker(
+                [33.9069,-118.0829],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b0414d2a2bb0450a86d68e87afd46302 = L.popup({maxWidth: '300'});
+
+            
+                var html_3297e31e42f54802a8ec9140239cb1de = $('<div id="html_3297e31e42f54802a8ec9140239cb1de" style="width: 100.0%; height: 100.0%;">City: Norwalk<br>Population: 106084<br>BreweryCount: 3<br>People per Brewery: 35361</div>')[0];
+                popup_b0414d2a2bb0450a86d68e87afd46302.setContent(html_3297e31e42f54802a8ec9140239cb1de);
+            
+
+            marker_568207d2ab914e0fa6b0b42b63210b72.bindPopup(popup_b0414d2a2bb0450a86d68e87afd46302);
+
+            
+        
+    
+
+            var marker_6a7119c7ee2040a49e56522bfa89d1e4 = L.marker(
+                [33.6909,-117.1849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_78f2585e7042498aa1de1ce495a563fe = L.popup({maxWidth: '300'});
+
+            
+                var html_594c7cf1d1214b8382f3e700ea34168b = $('<div id="html_594c7cf1d1214b8382f3e700ea34168b" style="width: 100.0%; height: 100.0%;">City: Menifee<br>Population: 90595<br>BreweryCount: 3<br>People per Brewery: 30198</div>')[0];
+                popup_78f2585e7042498aa1de1ce495a563fe.setContent(html_594c7cf1d1214b8382f3e700ea34168b);
+            
+
+            marker_6a7119c7ee2040a49e56522bfa89d1e4.bindPopup(popup_78f2585e7042498aa1de1ce495a563fe);
+
+            
+        
+    
+
+            var marker_48d16a64129247ec96f669c56ad37f0d = L.marker(
+                [34.5944,-118.1057],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_65abf25e284e46289dd6bb117deaea12 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e1709d7a5b94809b3d094bc87a0431f = $('<div id="html_1e1709d7a5b94809b3d094bc87a0431f" style="width: 100.0%; height: 100.0%;">City: Palmdale<br>Population: 157519<br>BreweryCount: 3<br>People per Brewery: 52506</div>')[0];
+                popup_65abf25e284e46289dd6bb117deaea12.setContent(html_1e1709d7a5b94809b3d094bc87a0431f);
+            
+
+            marker_48d16a64129247ec96f669c56ad37f0d.bindPopup(popup_65abf25e284e46289dd6bb117deaea12);
+
+            
+        
+    
+
+            var marker_b11acb088024427fb35a72b084657242 = L.marker(
+                [48.0809,-122.1558],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_2d9fb21923474a909a3c5c85c2f52b0b = L.popup({maxWidth: '300'});
+
+            
+                var html_21b17a0180244db39cdf9c50fb78190a = $('<div id="html_21b17a0180244db39cdf9c50fb78190a" style="width: 100.0%; height: 100.0%;">City: Marysville<br>Population: 166541<br>BreweryCount: 3<br>People per Brewery: 55513</div>')[0];
+                popup_2d9fb21923474a909a3c5c85c2f52b0b.setContent(html_21b17a0180244db39cdf9c50fb78190a);
+            
+
+            marker_b11acb088024427fb35a72b084657242.bindPopup(popup_2d9fb21923474a909a3c5c85c2f52b0b);
+
+            
+        
+    
+
+            var marker_fdaa1662aadf46619804cbfa8c46f5d6 = L.marker(
+                [33.9244,-117.2045],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_7745aa123086467b8c16e15722e71f85 = L.popup({maxWidth: '300'});
+
+            
+                var html_e8fb96f1f1674afdaabc3fc12b8fd318 = $('<div id="html_e8fb96f1f1674afdaabc3fc12b8fd318" style="width: 100.0%; height: 100.0%;">City: Moreno Valley<br>Population: 207226<br>BreweryCount: 3<br>People per Brewery: 69075</div>')[0];
+                popup_7745aa123086467b8c16e15722e71f85.setContent(html_e8fb96f1f1674afdaabc3fc12b8fd318);
+            
+
+            marker_fdaa1662aadf46619804cbfa8c46f5d6.bindPopup(popup_7745aa123086467b8c16e15722e71f85);
+
+            
+        
+    
+
+            var marker_4975d4ba4c9847d5bf3fc56a948c634d = L.marker(
+                [33.7341,-116.9969],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_40358d6e485d44bba32c1e11cf04fc89 = L.popup({maxWidth: '300'});
+
+            
+                var html_8389526e862b447bae65608a0bc5e8da = $('<div id="html_8389526e862b447bae65608a0bc5e8da" style="width: 100.0%; height: 100.0%;">City: Hemet<br>Population: 176892<br>BreweryCount: 3<br>People per Brewery: 58964</div>')[0];
+                popup_40358d6e485d44bba32c1e11cf04fc89.setContent(html_8389526e862b447bae65608a0bc5e8da);
+            
+
+            marker_4975d4ba4c9847d5bf3fc56a948c634d.bindPopup(popup_40358d6e485d44bba32c1e11cf04fc89);
+
+            
+        
+    
+
+            var marker_d9c781f5c7f64cd5bfc93179235af52b = L.marker(
+                [37.9722,-122.0016],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_26c830ea32e24ede811c96a75db6250c = L.popup({maxWidth: '300'});
+
+            
+                var html_806b34342576458b964a8b63833c0023 = $('<div id="html_806b34342576458b964a8b63833c0023" style="width: 100.0%; height: 100.0%;">City: Concord<br>Population: 654770<br>BreweryCount: 3<br>People per Brewery: 218256</div>')[0];
+                popup_26c830ea32e24ede811c96a75db6250c.setContent(html_806b34342576458b964a8b63833c0023);
+            
+
+            marker_d9c781f5c7f64cd5bfc93179235af52b.bindPopup(popup_26c830ea32e24ede811c96a75db6250c);
+
+            
+        
+    
+
+            var marker_2a43eeb4b03f4b75aac9d897d9d005ff = L.marker(
+                [34.0393,-117.6064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_92f3066488d442218fabe96bdf3d8568 = L.popup({maxWidth: '300'});
+
+            
+                var html_d0167cfb84d44fc6abbbb94d8fec418e = $('<div id="html_d0167cfb84d44fc6abbbb94d8fec418e" style="width: 100.0%; height: 100.0%;">City: Ontario<br>Population: 175841<br>BreweryCount: 2<br>People per Brewery: 87920</div>')[0];
+                popup_92f3066488d442218fabe96bdf3d8568.setContent(html_d0167cfb84d44fc6abbbb94d8fec418e);
+            
+
+            marker_2a43eeb4b03f4b75aac9d897d9d005ff.bindPopup(popup_92f3066488d442218fabe96bdf3d8568);
+
+            
+        
+    
+
+            var marker_8fed78fcdf6a4bd88118a7ead18f5c66 = L.marker(
+                [35.353,-119.036],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_90f74a18f051424682ab4b2225cf25f7 = L.popup({maxWidth: '300'});
+
+            
+                var html_d1466644008f4c638d21fc72ac7847c3 = $('<div id="html_d1466644008f4c638d21fc72ac7847c3" style="width: 100.0%; height: 100.0%;">City: Bakersfield<br>Population: 574362<br>BreweryCount: 2<br>People per Brewery: 287181</div>')[0];
+                popup_90f74a18f051424682ab4b2225cf25f7.setContent(html_d1466644008f4c638d21fc72ac7847c3);
+            
+
+            marker_8fed78fcdf6a4bd88118a7ead18f5c66.bindPopup(popup_90f74a18f051424682ab4b2225cf25f7);
+
+            
+        
+    
+
+            var marker_c3210faca3854f288b5bf84106ebc800 = L.marker(
+                [37.7938,-121.227],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_05aca75a77204778b6e429ac60889cb6 = L.popup({maxWidth: '300'});
+
+            
+                var html_2ba4288a3b6c4bbc8ef393bc7ab1c306 = $('<div id="html_2ba4288a3b6c4bbc8ef393bc7ab1c306" style="width: 100.0%; height: 100.0%;">City: Manteca<br>Population: 98736<br>BreweryCount: 2<br>People per Brewery: 49368</div>')[0];
+                popup_05aca75a77204778b6e429ac60889cb6.setContent(html_2ba4288a3b6c4bbc8ef393bc7ab1c306);
+            
+
+            marker_c3210faca3854f288b5bf84106ebc800.bindPopup(popup_05aca75a77204778b6e429ac60889cb6);
+
+            
+        
+    
+
+            var marker_7db662938a5a46ff9a72c743d4e8e82b = L.marker(
+                [38.3592,-121.9686],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_5f82cb21ba9f455ca2fa57d6e097db43 = L.popup({maxWidth: '300'});
+
+            
+                var html_b8785d06b9634cbc8fc0402744699ad9 = $('<div id="html_b8785d06b9634cbc8fc0402744699ad9" style="width: 100.0%; height: 100.0%;">City: Vacaville<br>Population: 100801<br>BreweryCount: 2<br>People per Brewery: 50400</div>')[0];
+                popup_5f82cb21ba9f455ca2fa57d6e097db43.setContent(html_b8785d06b9634cbc8fc0402744699ad9);
+            
+
+            marker_7db662938a5a46ff9a72c743d4e8e82b.bindPopup(popup_5f82cb21ba9f455ca2fa57d6e097db43);
+
+            
+        
+    
+
+            var marker_fc6681010f4e4679b5bf81a1d9adcff7 = L.marker(
+                [34.0555,-117.9113],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_028b4515c625423c997cb1b3e75d32fe = L.popup({maxWidth: '300'});
+
+            
+                var html_d71e1c22abca4b1a9526e66faa9968f3 = $('<div id="html_d71e1c22abca4b1a9526e66faa9968f3" style="width: 100.0%; height: 100.0%;">City: West Covina<br>Population: 107598<br>BreweryCount: 2<br>People per Brewery: 53799</div>')[0];
+                popup_028b4515c625423c997cb1b3e75d32fe.setContent(html_d71e1c22abca4b1a9526e66faa9968f3);
+            
+
+            marker_fc6681010f4e4679b5bf81a1d9adcff7.bindPopup(popup_028b4515c625423c997cb1b3e75d32fe);
+
+            
+        
+    
+
+            var marker_72d9225a68944ff893a723540d63b742 = L.marker(
+                [37.9789,-121.7957],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_dd2b5c70013f40bcb2b0cf6ff64f99e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_df9dfdc230974bc38812a25d370164e3 = $('<div id="html_df9dfdc230974bc38812a25d370164e3" style="width: 100.0%; height: 100.0%;">City: Antioch<br>Population: 302885<br>BreweryCount: 2<br>People per Brewery: 151442</div>')[0];
+                popup_dd2b5c70013f40bcb2b0cf6ff64f99e0.setContent(html_df9dfdc230974bc38812a25d370164e3);
+            
+
+            marker_72d9225a68944ff893a723540d63b742.bindPopup(popup_dd2b5c70013f40bcb2b0cf6ff64f99e0);
+
+            
+        
+    
+
+            var marker_d8d5ce6e5b5645d8935da46197c0baf0 = L.marker(
+                [37.726,-121.444],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_bb0de377ce574631adc4055a5269b0df = L.popup({maxWidth: '300'});
+
+            
+                var html_1d5664076016467da9415401383f42dd = $('<div id="html_1d5664076016467da9415401383f42dd" style="width: 100.0%; height: 100.0%;">City: Tracy<br>Population: 95982<br>BreweryCount: 2<br>People per Brewery: 47991</div>')[0];
+                popup_bb0de377ce574631adc4055a5269b0df.setContent(html_1d5664076016467da9415401383f42dd);
+            
+
+            marker_d8d5ce6e5b5645d8935da46197c0baf0.bindPopup(popup_bb0de377ce574631adc4055a5269b0df);
+
+            
+        
+    
+
+            var marker_733aa6f2d45d4361a7582844c67b33f0 = L.marker(
+                [34.1128,-117.3885],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_b3e8481881ca497e89a26b35c25a2ddc = L.popup({maxWidth: '300'});
+
+            
+                var html_105d76c32f7640249dc178b3e81519f4 = $('<div id="html_105d76c32f7640249dc178b3e81519f4" style="width: 100.0%; height: 100.0%;">City: Rialto<br>Population: 103562<br>BreweryCount: 2<br>People per Brewery: 51781</div>')[0];
+                popup_b3e8481881ca497e89a26b35c25a2ddc.setContent(html_105d76c32f7640249dc178b3e81519f4);
+            
+
+            marker_733aa6f2d45d4361a7582844c67b33f0.bindPopup(popup_b3e8481881ca497e89a26b35c25a2ddc);
+
+            
+        
+    
+
+            var marker_24e8db4ffdc2432da942e642b4bcfa44 = L.marker(
+                [38.6948,-121.288],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_f301d6749a5f4f9994e31c19605b53ca = L.popup({maxWidth: '300'});
+
+            
+                var html_7084be285c1645d0b3f5bf38747337db = $('<div id="html_7084be285c1645d0b3f5bf38747337db" style="width: 100.0%; height: 100.0%;">City: Citrus Heights<br>Population: 87931<br>BreweryCount: 2<br>People per Brewery: 43965</div>')[0];
+                popup_f301d6749a5f4f9994e31c19605b53ca.setContent(html_7084be285c1645d0b3f5bf38747337db);
+            
+
+            marker_24e8db4ffdc2432da942e642b4bcfa44.bindPopup(popup_f301d6749a5f4f9994e31c19605b53ca);
+
+            
+        
+    
+
+            var marker_50720976ed2042a1b26b73fc39c877c9 = L.marker(
+                [37.6863,-122.4684],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_5e8e519044bb4da2b72defefb159a780 = L.popup({maxWidth: '300'});
+
+            
+                var html_0745bca1b2a54ccba6a5513fcd8a6b85 = $('<div id="html_0745bca1b2a54ccba6a5513fcd8a6b85" style="width: 100.0%; height: 100.0%;">City: Daly City<br>Population: 107074<br>BreweryCount: 2<br>People per Brewery: 53537</div>')[0];
+                popup_5e8e519044bb4da2b72defefb159a780.setContent(html_0745bca1b2a54ccba6a5513fcd8a6b85);
+            
+
+            marker_50720976ed2042a1b26b73fc39c877c9.bindPopup(popup_5e8e519044bb4da2b72defefb159a780);
+
+            
+        
+    
+
+            var marker_f7b09ea6154c4e5b8e2979672c475668 = L.marker(
+                [34.9333,-120.4432],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_86b93e72880147faad3a7377f44600c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_802392875a5f44319db2beeb359e7fbd = $('<div id="html_802392875a5f44319db2beeb359e7fbd" style="width: 100.0%; height: 100.0%;">City: Santa Maria<br>Population: 140219<br>BreweryCount: 2<br>People per Brewery: 70109</div>')[0];
+                popup_86b93e72880147faad3a7377f44600c5.setContent(html_802392875a5f44319db2beeb359e7fbd);
+            
+
+            marker_f7b09ea6154c4e5b8e2979672c475668.bindPopup(popup_86b93e72880147faad3a7377f44600c5);
+
+            
+        
+    
+
+            var marker_81597166055d44bdb024d33c700e8eb1 = L.marker(
+                [37.0047,-121.5843],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_7a164f170cb34b2e8bec674b0adf54ad = L.popup({maxWidth: '300'});
+
+            
+                var html_c878474d79ae40f287262fc987a381bf = $('<div id="html_c878474d79ae40f287262fc987a381bf" style="width: 100.0%; height: 100.0%;">City: Gilroy<br>Population: 116235<br>BreweryCount: 2<br>People per Brewery: 58117</div>')[0];
+                popup_7a164f170cb34b2e8bec674b0adf54ad.setContent(html_c878474d79ae40f287262fc987a381bf);
+            
+
+            marker_81597166055d44bdb024d33c700e8eb1.bindPopup(popup_7a164f170cb34b2e8bec674b0adf54ad);
+
+            
+        
+    
+
+            var marker_28abf4c4108942ca982dc0b97246a175 = L.marker(
+                [39.1357,-121.6381],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_3e6fee01dccb4fb6ae90c9350cce49fe = L.popup({maxWidth: '300'});
+
+            
+                var html_27d3e08116d4483a807752978464a8f8 = $('<div id="html_27d3e08116d4483a807752978464a8f8" style="width: 100.0%; height: 100.0%;">City: Yuba City<br>Population: 120186<br>BreweryCount: 1<br>People per Brewery: 120186</div>')[0];
+                popup_3e6fee01dccb4fb6ae90c9350cce49fe.setContent(html_27d3e08116d4483a807752978464a8f8);
+            
+
+            marker_28abf4c4108942ca982dc0b97246a175.bindPopup(popup_3e6fee01dccb4fb6ae90c9350cce49fe);
+
+            
+        
+    
+
+            var marker_78658e91e2e94bd5b14d908df76e53a4 = L.marker(
+                [36.288,-115.0901],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_6603048e2a1644d5b818bc4668d6469b = L.popup({maxWidth: '300'});
+
+            
+                var html_893d886dac8644b381c051b9f22dc029 = $('<div id="html_893d886dac8644b381c051b9f22dc029" style="width: 100.0%; height: 100.0%;">City: North Las Vegas<br>Population: 242975<br>BreweryCount: 1<br>People per Brewery: 242975</div>')[0];
+                popup_6603048e2a1644d5b818bc4668d6469b.setContent(html_893d886dac8644b381c051b9f22dc029);
+            
+
+            marker_78658e91e2e94bd5b14d908df76e53a4.bindPopup(popup_6603048e2a1644d5b818bc4668d6469b);
+
+            
+        
+    
+
+            var marker_4d6340a61c804bfa8fdbcaf028278c11 = L.marker(
+                [34.0968,-117.4599],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_45182c11e06d4457a135c4ab9ea1fc23 = L.popup({maxWidth: '300'});
+
+            
+                var html_c616a19dea2e4bf4a57505aa344e474c = $('<div id="html_c616a19dea2e4bf4a57505aa344e474c" style="width: 100.0%; height: 100.0%;">City: Fontana<br>Population: 211815<br>BreweryCount: 1<br>People per Brewery: 211815</div>')[0];
+                popup_45182c11e06d4457a135c4ab9ea1fc23.setContent(html_c616a19dea2e4bf4a57505aa344e474c);
+            
+
+            marker_4d6340a61c804bfa8fdbcaf028278c11.bindPopup(popup_45182c11e06d4457a135c4ab9ea1fc23);
+
+            
+        
+    
+
+            var marker_a77df624628e49ddb804799736431f64 = L.marker(
+                [36.6224,-121.8191],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_22da832e8aff4701b7fc9581370746cd = L.popup({maxWidth: '300'});
+
+            
+                var html_ca1b5a02327746978f5a9030856b706f = $('<div id="html_ca1b5a02327746978f5a9030856b706f" style="width: 100.0%; height: 100.0%;">City: Seaside<br>Population: 118110<br>BreweryCount: 1<br>People per Brewery: 118110</div>')[0];
+                popup_22da832e8aff4701b7fc9581370746cd.setContent(html_ca1b5a02327746978f5a9030856b706f);
+            
+
+            marker_a77df624628e49ddb804799736431f64.bindPopup(popup_22da832e8aff4701b7fc9581370746cd);
+
+            
+        
+    
+
+            var marker_1328bf6fca9649d49a14b44dc8dc44ae = L.marker(
+                [32.6281,-117.0145],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_ee9aa38693904b34a31e606aaa179bb3 = L.popup({maxWidth: '300'});
+
+            
+                var html_97559499b05f4628b88140ed1f1283da = $('<div id="html_97559499b05f4628b88140ed1f1283da" style="width: 100.0%; height: 100.0%;">City: Chula Vista<br>Population: 270471<br>BreweryCount: 1<br>People per Brewery: 270471</div>')[0];
+                popup_ee9aa38693904b34a31e606aaa179bb3.setContent(html_97559499b05f4628b88140ed1f1283da);
+            
+
+            marker_1328bf6fca9649d49a14b44dc8dc44ae.bindPopup(popup_ee9aa38693904b34a31e606aaa179bb3);
+
+            
+        
+    
+
+            var marker_83c0977cdba64a988f7dbd8c9dccc736 = L.marker(
+                [46.1979,-119.1732],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_5f9f2d59801245a7a058e5abc384b900 = L.popup({maxWidth: '300'});
+
+            
+                var html_1adbac6fb91a403eaa59bca34e2dc955 = $('<div id="html_1adbac6fb91a403eaa59bca34e2dc955" style="width: 100.0%; height: 100.0%;">City: Kennewick<br>Population: 232915<br>BreweryCount: 1<br>People per Brewery: 232915</div>')[0];
+                popup_5f9f2d59801245a7a058e5abc384b900.setContent(html_1adbac6fb91a403eaa59bca34e2dc955);
+            
+
+            marker_83c0977cdba64a988f7dbd8c9dccc736.bindPopup(popup_5f9f2d59801245a7a058e5abc384b900);
+
+            
+        
+    
+
+            var marker_adb97b1b1e3c4b24a901929053f90c65 = L.marker(
+                [33.9678,-118.0188],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_5d75d92d0b08405f9a2be148acfcd586 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c1cd412a88e4f7da2841a41acb33500 = $('<div id="html_7c1cd412a88e4f7da2841a41acb33500" style="width: 100.0%; height: 100.0%;">City: Whittier<br>Population: 86838<br>BreweryCount: 1<br>People per Brewery: 86838</div>')[0];
+                popup_5d75d92d0b08405f9a2be148acfcd586.setContent(html_7c1cd412a88e4f7da2841a41acb33500);
+            
+
+            marker_adb97b1b1e3c4b24a901929053f90c65.bindPopup(popup_5d75d92d0b08405f9a2be148acfcd586);
+
+            
+        
+    
+
+            var marker_595c3c15deab48539fc4f8bf9ba7e1cf = L.marker(
+                [34.2663,-118.749],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_287ccf50daac48d08f389435b6b64a89 = L.popup({maxWidth: '300'});
+
+            
+                var html_f5b83cbc3cbd4b38bfffba54ee7ad5d8 = $('<div id="html_f5b83cbc3cbd4b38bfffba54ee7ad5d8" style="width: 100.0%; height: 100.0%;">City: Simi Valley<br>Population: 127864<br>BreweryCount: 1<br>People per Brewery: 127864</div>')[0];
+                popup_287ccf50daac48d08f389435b6b64a89.setContent(html_f5b83cbc3cbd4b38bfffba54ee7ad5d8);
+            
+
+            marker_595c3c15deab48539fc4f8bf9ba7e1cf.bindPopup(popup_287ccf50daac48d08f389435b6b64a89);
+
+            
+        
+    
+
+            var marker_6fc1aba34a514dc79cd323dfad7b475f = L.marker(
+                [36.326,-119.654],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d541b744f264484c86a77f7384a7c686);
+            
+    
+            var popup_7c495646bd374451a238aae70c9f45d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_73e680b2f0274a5fa21c366345b063ad = $('<div id="html_73e680b2f0274a5fa21c366345b063ad" style="width: 100.0%; height: 100.0%;">City: Hanford<br>Population: 92066<br>BreweryCount: 1<br>People per Brewery: 92066</div>')[0];
+                popup_7c495646bd374451a238aae70c9f45d1.setContent(html_73e680b2f0274a5fa21c366345b063ad);
+            
+
+            marker_6fc1aba34a514dc79cd323dfad7b475f.bindPopup(popup_7c495646bd374451a238aae70c9f45d1);
+
+            
+        
+</script>
