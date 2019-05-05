@@ -1,4 +1,4 @@
-## Write up for this work can be found on my Medium Publication: https://medium.com/datadream
+## Most of this work is presented on my Medium Publication: https://medium.com/datadream
 
 For instance, find out which west coast city has the most [Breweries per Capita](https://medium.com/datadream/beer-boroughs-f9432e1859d3). 
 
