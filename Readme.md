@@ -5,3 +5,5 @@ Find out which west coast city has the most [Breweries per Capita](https://mediu
 Or maybe soccer is more your style.  If so, check my ongoing attempt to wrangle insights out of [English Premier Leage Stats](https://medium.com/datadream/english-premier-league-stats-bd07fe8a0af)
 
 Some of the work is for assignments from the recently completed [Data Science Professional Certification from IBM](https://www.coursera.org/specializations/ibm-data-science-professional-certificate)
+
+See the 'NameCompare' in the Project repo - a set of scripts I wrote to assist with comparing lists of users with lists of current employees (used for SOX compliance audits)
