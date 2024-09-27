@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-@author: dan hislop |  https://github.com/danhislop | hislopdan@gmail.com
+@author: dan hislop |  https://github.com/danhislop
 
 Created on Fri Apr  12 19:41:50 2019
 pd.set_option('display.width', 700)
